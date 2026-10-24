@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ActionModeCloseButtonStyle.Light" parent="@style/ActionButton.CloseMode.Light_ab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:background">@drawable/btn_cab_done_light_ab</item>
+    </style>
+
+    <style name="ActionModeCloseButtonStyle.Dark" parent="@style/ActionButton.CloseMode.Dark_ab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:background">@drawable/btn_cab_done_dark_ab</item>
+    </style>
+
+    <style name="ActionModeCloseButtonStyle.Palm" parent="@style/ActionButton.CloseMode.Palm_ab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:drawable">@drawable/ic_action_navigation_accept_palm</item>
+    </style>
+
+</resources>

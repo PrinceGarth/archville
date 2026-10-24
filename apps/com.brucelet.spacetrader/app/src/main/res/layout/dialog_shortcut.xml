@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_shortcut"
+    style="@style/RootLayout"
+    android:gravity="start"
+    android:paddingBottom="8dip"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip"
+    android:paddingTop="8dip"
+    tools:context=".ShortcutDialog" >
+
+    <TextView
+        style="?attr/textViewStyleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/dialog_shortcut_prompt" />
+
+    <TextView
+        style="?attr/textViewStyleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_shortcut_1" />
+
+    <Spinner
+        android:id="@+id/dialog_shortcut_selector1"
+        style="?android:attr/spinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp" />
+
+    <TextView
+        style="?attr/textViewStyleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_shortcut_2" />
+
+    <Spinner
+        android:id="@+id/dialog_shortcut_selector2"
+        style="?android:attr/spinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp" />
+
+    <TextView
+        style="?attr/textViewStyleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_shortcut_3" />
+
+    <Spinner
+        android:id="@+id/dialog_shortcut_selector3"
+        style="?android:attr/spinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp" />
+
+    <TextView
+        style="?attr/textViewStyleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_shortcut_4" />
+
+    <Spinner
+        android:id="@+id/dialog_shortcut_selector4"
+        style="?android:attr/spinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp" />
+
+</LinearLayout>

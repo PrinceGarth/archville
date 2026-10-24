@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="AutoCompleteTextViewLight_ACWidgets" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+      <item name="android:dropDownSelector">@drawable/light_acwidgets_list_selector_holo_light</item>
+	    <item name="android:background">@drawable/light_acwidgets_edit_text_holo_light</item>
+  </style>
+
+  <style name="ButtonLight_ACWidgets" parent="android:Widget.Holo.Light.Button">
+	  <item name="android:background">@drawable/light_acwidgets_btn_default_holo_light</item>
+  </style>
+
+  <style name="ImageButtonLight_ACWidgets" parent="android:Widget.Holo.Light.ImageButton">
+	  <item name="android:background">@drawable/light_acwidgets_btn_default_holo_light</item>
+  </style>
+
+  <style name="SpinnerLight_ACWidgets" parent="android:Widget.Holo.Light.Spinner">
+      <item name="android:background">@drawable/light_acwidgets_spinner_background_holo_light</item>
+      <item name="android:dropDownSelector">@drawable/light_acwidgets_list_selector_holo_light</item>
+  </style>
+
+  <style name="ProgressBarLight_ACWidgets" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/light_acwidgets_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/light_acwidgets_progress_indeterminate_horizontal_holo_light</item>
+  </style>
+
+</resources>

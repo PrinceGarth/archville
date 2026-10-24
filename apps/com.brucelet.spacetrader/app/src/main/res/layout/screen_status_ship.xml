@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/screen_status_ship_type_layout"
+            style="@style/ScreenRow"
+            android:layout_alignParentTop="true"
+            android:gravity="top" >
+
+            <TextView
+                style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:text="@string/screen_status_ship_type" />
+
+            <TextView
+                android:id="@+id/screen_status_ship_type"
+                
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen_status_ship_equip_layout"
+            style="@style/ScreenRow"
+            android:layout_below="@id/screen_status_ship_type_layout"
+            android:gravity="top" >
+
+            <TextView
+                style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:text="@string/screen_status_ship_equip" />
+
+            <LinearLayout
+                android:id="@+id/screen_status_ship_equip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_pulse"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_beam"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_military"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_morgan"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_energy"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_reflective"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_lightning"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_extrabays"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/gadget_extrabays_generic"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_autorepair"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/gadget_autorepair"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_navigating"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/gadget_navigating"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_targeting"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/gadget_targeting"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_cloaking"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/gadget_cloaking"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_fuelcompactor"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/gadget_fuelcompactor"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_equip_escapepod"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/screen_status_ship_equip_pod"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen_status_ship_unfilled_layout"
+            style="@style/ScreenRow"
+            android:layout_below="@id/screen_status_ship_equip_layout"
+            android:gravity="top" >
+
+            <TextView
+                style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:text="@string/screen_status_ship_unfilled" />
+
+            <LinearLayout
+                android:id="@+id/screen_status_ship_unfilled"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/screen_status_ship_unfilled_weapons"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_unfilled_shields"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/screen_status_ship_unfilled_gadgets"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <LinearLayout
+        android:id="@+id/screen_status_ship_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/screen_status_ship_type_layout"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <com.brucelet.spacetrader.FixedRatioImageView
+            android:id="@+id/screen_status_ship_image"
+            style="@style/ShipImage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/screen_yard_buyship_info_image"
+            android:scaleType="centerInside" />
+    </LinearLayout> -->
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/spacer"
+        layout="@layout/screen_status_spacer" />
+
+    <LinearLayout
+        android:id="@+id/screen_status_buttons"
+        style="@style/ScreenRow"
+        android:layout_below="@id/spacer"
+        android:gravity="start" >
+
+        <Button
+            android:id="@+id/screen_status_back_button"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_status_back_button" />
+
+        <Button
+            android:id="@+id/screen_status_quests_button"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_status_quests_button" />
+
+        <Button
+            android:id="@+id/screen_status_cargo_button"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_status_cargo_button" />
+    </LinearLayout>
+
+</RelativeLayout>

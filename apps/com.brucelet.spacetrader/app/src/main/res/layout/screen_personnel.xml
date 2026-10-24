@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <RelativeLayout
+        android:id="@+id/screen_personnel_merc1"
+        style="@style/RootLayout" >
+
+        <LinearLayout
+            android:id="@+id/screen_personnel_merc1_empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <Button
+                style="?attr/buttonStyleSquare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/screen_personnel_fire"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/screen_personnel_merc1_empty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="@string/screen_personnel_vacancy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen_personnel_merc1_stats"
+            style="@style/RootLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_personnel_merc1_fire"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/screen_personnel_fire" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc1_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc1_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="end"
+                    android:text="@string/format_dailycost" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <Button
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/screen_personnel_fire"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc1_pilot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/screen_personnel_pilot" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc1_fighter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/screen_personnel_fighter" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <Button
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/screen_personnel_fire"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc1_trader"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/screen_personnel_trader" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc1_engineer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/screen_personnel_engineer" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/HorizontalBar"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/screen_personnel_merc2"
+        style="@style/RootLayout" >
+
+        <LinearLayout
+            android:id="@+id/screen_personnel_merc2_empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <Button
+                style="?attr/buttonStyleSquare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/screen_personnel_fire"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/screen_personnel_merc2_empty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="@string/screen_personnel_vacancy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen_personnel_merc2_stats"
+            style="@style/RootLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_personnel_merc2_fire"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/screen_personnel_fire" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc2_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc2_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="end"
+                    android:text="@string/format_dailycost" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <Button
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/screen_personnel_fire"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc2_pilot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/screen_personnel_pilot" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc2_fighter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/screen_personnel_fighter" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <Button
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/screen_personnel_fire"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc2_trader"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/screen_personnel_trader" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc2_engineer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/screen_personnel_engineer" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/HorizontalBar"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/screen_personnel_merc3"
+        style="@style/RootLayout" >
+
+        <LinearLayout
+            android:id="@+id/screen_personnel_merc3_empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <Button
+                style="?attr/buttonStyleSquare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/screen_personnel_hire"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/screen_personnel_merc3_empty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="@string/screen_personnel_nomerc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen_personnel_merc3_stats"
+            style="@style/RootLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_personnel_merc3_hire"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/screen_personnel_hire" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc3_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc3_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="end"
+                    android:text="@string/format_dailycost" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <Button
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/screen_personnel_fire"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc3_pilot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/screen_personnel_pilot" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc3_fighter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/screen_personnel_fighter" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <Button
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/screen_personnel_hire"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc3_trader"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/screen_personnel_trader" />
+
+                <TextView
+                    android:id="@+id/screen_personnel_merc3_engineer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/screen_personnel_engineer" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/screen_personnel_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:text="@string/format_cash" />
+
+</LinearLayout>

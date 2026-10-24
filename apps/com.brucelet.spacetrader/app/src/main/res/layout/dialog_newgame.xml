@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:paddingBottom="8dip"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip"
+    android:paddingTop="8dip">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/dialog_newgame_name_row"
+        style="@style/ScreenRow"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/dialog_newgame_name_label"
+            style="?attr/textViewStyleHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_name" />
+
+        <EditText
+            style="?android:editTextStyle"
+            android:layout_toRightOf="@id/dialog_newgame_name_label"
+            android:layout_toEndOf="@id/dialog_newgame_name_label"
+            android:layout_alignBaseline="@id/dialog_newgame_name_label"
+            android:id="@+id/dialog_newgame_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="20" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/dialog_newgame_name_row"
+        android:id="@+id/dialog_newgame_difficultypicker"
+        style="@style/ScreenRow" >
+
+        <TextView
+            android:id="@+id/dialog_newgame_difficultypicker_label"
+            style="?attr/textViewStyleHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/dialog_newgame_difficulty" />
+
+        <Button
+            android:id="@+id/dialog_newgame_difficultypicker_minus"
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_minus" />
+
+        <TextView
+            android:id="@+id/dialog_newgame_difficultypicker_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/dialog_newgame_difficultypicker_plus"
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_plus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/dialog_newgame_difficultypicker"
+        android:id="@+id/dialog_newgame_points_row"
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="?attr/textViewStyleHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/dialog_newgame_points" />
+
+        <Button
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_minus"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/dialog_newgame_totalpoints"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center" />
+
+        <Button
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_plus"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/dialog_newgame_points_row"
+        android:id="@+id/dialog_newgame_pilotpicker"
+        style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/skill_pilot" />
+
+        <Button
+            android:id="@+id/dialog_newgame_pilotpicker_minus"
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_minus" />
+
+        <TextView
+            android:id="@+id/dialog_newgame_pilotpicker_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/dialog_newgame_pilotpicker_plus"
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_plus" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/dialog_newgame_pilotpicker"
+        android:id="@+id/dialog_newgame_fighterpicker"
+        style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/skill_fighter" />
+
+        <Button
+            android:id="@+id/dialog_newgame_fighterpicker_minus"
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_minus" />
+
+        <TextView
+            android:id="@+id/dialog_newgame_fighterpicker_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/dialog_newgame_fighterpicker_plus"
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_plus" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/dialog_newgame_fighterpicker"
+        android:id="@+id/dialog_newgame_traderpicker"
+        style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/skill_trader" />
+
+        <Button
+            android:id="@+id/dialog_newgame_traderpicker_minus"
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_minus" />
+
+        <TextView
+            android:id="@+id/dialog_newgame_traderpicker_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/dialog_newgame_traderpicker_plus"
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_plus" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/dialog_newgame_traderpicker"
+        android:id="@+id/dialog_newgame_engineerpicker"
+        style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/skill_engineer" />
+
+        <Button
+            android:id="@+id/dialog_newgame_engineerpicker_minus"
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_minus" />
+
+        <TextView
+            android:id="@+id/dialog_newgame_engineerpicker_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/dialog_newgame_engineerpicker_plus"
+            style="?attr/buttonStyleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_newgame_plus" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <CheckBox style="?android:checkboxStyle"
+        android:id="@+id/dialog_newgame_randomsystems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_newgame_engineerpicker"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dialog_newgame_randomsystems" />
+
+</RelativeLayout>

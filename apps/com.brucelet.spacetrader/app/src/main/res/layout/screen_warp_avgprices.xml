@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  >
+
+            <LinearLayout
+                android:id="@+id/screen_warp_avgprices_pagerspacer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/screen_warp_avgprices_pager"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_alignBottom="@id/screen_warp_avgprices_pagerspacer"
+                android:layout_alignTop="@id/screen_warp_avgprices_pagerspacer" />
+
+            <TextView
+                android:id="@+id/screen_warp_avgprices_bays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/screen_warp_avgprices_pagerspacer"
+                android:gravity="start"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:id="@+id/screen_warp_avgprices_credits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/screen_warp_avgprices_pagerspacer"
+                android:gravity="end"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"  />
+
+            <LinearLayout
+                android:id="@+id/screen_warp_avgprices_diffbutton_row"
+                style="@style/ScreenRow"
+                android:layout_below="@id/screen_warp_avgprices_bays"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/screen_warp_avgprices_diffbutton"
+                        style="?attr/buttonStyleRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp" />
+                </LinearLayout>
+
+                <Button
+                    style="?attr/buttonStyleRounded"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/screen_warp_avgprices_lowerspacer"
+                android:layout_below="@id/screen_warp_avgprices_diffbutton_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="1"
+                android:singleLine="false"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include layout="@layout/screen_warp_subscreen_buttons" />
+</LinearLayout>
+
+    <include layout="@layout/screen_warp_subscreen_arrows" />
+
+</RelativeLayout>

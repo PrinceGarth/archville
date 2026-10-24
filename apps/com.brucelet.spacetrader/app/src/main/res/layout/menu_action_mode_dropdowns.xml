@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/menu_command"
+        style="?android:attr/spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:minWidth="0dp"
+        android:singleLine="true"
+        android:text="@string/menu_command"
+        android:textAppearance="?attr/actionModeSpinnerTextStyle" />
+
+    <Button
+        android:id="@+id/menu_game"
+        style="?android:attr/spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/menu_command"
+        android:layout_toEndOf="@id/menu_command"
+        android:layout_centerVertical="true"
+        android:minWidth="0dp"
+        android:singleLine="true"
+        android:text="@string/menu_game"
+        android:textAppearance="?attr/actionModeSpinnerTextStyle"/>
+
+    <Button
+        android:id="@+id/menu_help"
+        style="?android:attr/spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/menu_game"
+        android:layout_toEndOf="@id/menu_game"
+        android:layout_centerVertical="true"
+        android:minWidth="0dp"
+        android:singleLine="true"
+        android:text="@string/menu_help"
+        android:textAppearance="?attr/actionModeSpinnerTextStyle" />
+
+    <com.brucelet.spacetrader.widget.MenuTouchInterceptor
+        android:id="@+id/touch_intercepter"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/menu_command"
+        android:layout_alignStart="@id/menu_command"
+        android:layout_alignRight="@id/menu_help"
+        android:layout_alignEnd="@id/menu_help"
+        android:layout_alignTop="@id/menu_game"
+        android:layout_alignBottom="@id/menu_game"/>
+
+</RelativeLayout>

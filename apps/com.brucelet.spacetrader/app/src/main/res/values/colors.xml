@@ -1,0 +1,56 @@
+<resources>
+    
+    <color name="stroke_holo_light">#99333333</color>
+    <color name="stroke_holo_dark">#99cccccc</color>
+    <color name="stroke_palm">#ff000000</color>
+    <color name="stroke_material_light">@color/bright_foreground_disabled_material_light</color>
+    <color name="stroke_material_dark">@color/bright_foreground_disabled_material_dark</color>
+    
+    <color name="btn_default_disabled_focused_holo">#1fffffff</color>
+    <color name="btn_default_disabled_holo">#26acacac</color>
+    <color name="btn_default_focused_holo">#6633b5e5</color>
+    <!--<color name="btn_default_normal_holo_light">#66acacac</color>-->
+    <!--<color name="btn_default_normal_holo_dark">#66acacac</color>-->
+    <color name="btn_default_normal_holo_light">@android:color/white</color>
+    <color name="btn_default_normal_holo_dark">@android:color/black</color>
+    <color name="btn_default_pressed_holo">#9933b5e5</color>
+    <!-- <color name="btn_default_pressed_holo">#e033b5e5</color> -->
+    
+    <color name="btn_default_disabled_focused_material_light">#1fffffff</color>
+    <color name="btn_default_disabled_material_light">#26acacac</color>
+    <color name="btn_default_focused_material_light">#6633b5e5</color>
+    <!--<color name="btn_default_normal_material_light">#66acacac</color>-->
+    <color name="btn_default_normal_material_light">@android:color/white</color>
+    <color name="btn_default_pressed_material_light">#33999999</color>
+    
+    <color name="btn_default_disabled_focused_material_dark">#1fffffff</color>
+    <color name="btn_default_disabled_material_dark">#26acacac</color>
+    <color name="btn_default_focused_material_dark">#6633b5e5</color>
+    <!--<color name="btn_default_normal_material_dark">#66acacac</color>-->
+    <color name="btn_default_normal_material_dark">@android:color/black</color>
+    <color name="btn_default_pressed_material_dark">#40cccccc</color>
+    
+    <color name="btn_default_disabled_focused_palm">#ffffffff</color>
+    <color name="btn_default_disabled_palm">#ffffffff</color>
+    <color name="btn_default_focused_palm">#ff330099</color>
+    <color name="btn_default_normal_palm">#ffffffff</color>
+    <color name="btn_default_pressed_palm">#ff330099</color>
+    
+    <color name="doc_background">#ffa9be8e</color>
+
+    <color name="icon_green1">#ff316500</color>
+    <color name="icon_green2">#ff319a00</color>
+    <color name="icon_green3">#ff31cf00</color>
+    <color name="icon_yellow">#ffceff31</color>
+    <color name="icon_thumb_yellow">#ffffcf00</color>
+    <color name="icon_blue">#ff639ace</color>
+
+    <color name="icon_green1_dark">#ff244a00</color>
+
+    <color name="highlighted_text_green2">#66319a00</color>
+
+    <color name="blue_palm">#ff330099</color>
+
+    <color name="status_bar_extra_tint">#43000000</color>
+
+</resources>

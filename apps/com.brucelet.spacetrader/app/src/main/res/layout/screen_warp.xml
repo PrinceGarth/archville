@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RootLayout"
+    tools:context=".ChartScreen" >
+
+    <view
+        android:id="@+id/screen_warp_warpview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.brucelet.spacetrader.WarpScreen$WarpView" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="0dp" >
+
+        <TextView
+            android:id="@+id/screen_warp_tracked"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="start" />
+    </FrameLayout>
+
+</LinearLayout>

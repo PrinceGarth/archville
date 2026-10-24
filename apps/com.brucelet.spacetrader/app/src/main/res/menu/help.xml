@@ -1,0 +1,67 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto" >
+
+    <group android:id="@+id/menu_help_group_current">
+        <item
+            android:id="@+id/menu_help_current"
+            android:alphabeticShortcut="@string/shortcut_help"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_help_current"/>
+        <item
+            android:id="@+id/menu_help_helponmenu"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_help_helponmenu"/>
+    </group>
+    <group android:id="@+id/menu_help_group_howtoplay">
+        <item
+            android:id="@+id/menu_help_howtoplay"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_help_howtoplay"/>
+        <item
+            android:id="@+id/menu_help_trading"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_help_trading"/>
+        <item
+            android:id="@+id/menu_help_traveling"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_help_traveling"/>
+        <item
+            android:id="@+id/menu_help_shipequipment"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_help_shipequipment"/>
+        <item
+            android:id="@+id/menu_help_skills"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_help_skills"/>
+        <item
+            android:id="@+id/menu_help_firststeps"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_help_firststeps"/>
+        <item
+            android:id="@+id/menu_help_acknowledgements"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_help_acknowledgements"/>
+    </group>
+    <group android:id="@+id/menu_help_group_about">
+        <item
+            android:id="@+id/menu_help_about"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_help_about"/>
+        <item
+            android:id="@+id/menu_help_documentation"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_help_documentation"/>
+    </group>
+
+</menu>

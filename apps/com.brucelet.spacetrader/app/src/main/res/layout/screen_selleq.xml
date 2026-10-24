@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <RelativeLayout
+        android:id="@+id/screen_selleq_weapon"
+        style="@style/RootLayout" >
+
+        <LinearLayout
+            android:id="@+id/screen_selleq_weapon_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <Button
+                style="?attr/buttonStyleSquare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:text="@string/generic_sell"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="@string/screen_selleq_noweapons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen_selleq_weapon_notempty"
+            style="@style/RootLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/screen_selleq_weapon1"
+                style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_selleq_weapon1_button"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="@string/generic_sell" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_weapon1_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_weapon1_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:text="@string/format_credits" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_selleq_weapon2"
+                style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_selleq_weapon2_button"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="@string/generic_sell" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_weapon2_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_weapon2_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:text="@string/format_credits" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_selleq_weapon3"
+                style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_selleq_weapon3_button"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="@string/generic_sell" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_weapon3_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_weapon3_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:text="@string/format_credits" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/HorizontalBar"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/screen_selleq_shield"
+        style="@style/RootLayout" >
+
+        <LinearLayout
+            android:id="@+id/screen_selleq_shield_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <Button
+                style="?attr/buttonStyleSquare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:text="@string/generic_sell"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="@string/screen_selleq_noshields" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen_selleq_shield_notempty"
+            style="@style/RootLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/screen_selleq_shield1"
+                style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_selleq_shield1_button"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="@string/generic_sell" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_shield1_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_shield1_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:text="@string/format_credits" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_selleq_shield2"
+                style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_selleq_shield2_button"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="@string/generic_sell" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_shield2_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_shield2_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:text="@string/format_credits" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_selleq_shield3"
+                style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_selleq_shield3_button"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="@string/generic_sell" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_shield3_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_shield3_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:text="@string/format_credits" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/HorizontalBar"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/screen_selleq_gadget"
+        style="@style/RootLayout" >
+
+        <LinearLayout
+            android:id="@+id/screen_selleq_gadget_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <Button
+                style="?attr/buttonStyleSquare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:text="@string/generic_sell"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="@string/screen_selleq_nogadgets" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen_selleq_gadget_notempty"
+            style="@style/RootLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/screen_selleq_gadget1"
+                style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_selleq_gadget1_button"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="@string/generic_sell" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_gadget1_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_gadget1_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:text="@string/format_credits" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_selleq_gadget2"
+                style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_selleq_gadget2_button"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="@string/generic_sell" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_gadget2_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_gadget2_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:text="@string/format_credits" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_selleq_gadget3"
+                style="@style/ScreenRow" >
+
+                <Button
+                    android:id="@+id/screen_selleq_gadget3_button"
+                    style="?attr/buttonStyleSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="@string/generic_sell" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_gadget3_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+
+                <TextView
+                    android:id="@+id/screen_selleq_gadget3_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:text="@string/format_credits" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/screen_selleq_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:text="@string/format_cash" />
+
+</LinearLayout>

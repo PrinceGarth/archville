@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:paddingBottom="8dip"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip"
+    android:paddingTop="8dip" >
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/dialog_input_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="false" />
+    </LinearLayout>
+
+    <EditText
+        style="?android:editTextStyle"
+        android:id="@+id/dialog_input_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="5" />
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/screen_warp_target_mainbody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?attr/textViewStyleHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_info_name" />
+
+            <TextView
+                style="?attr/textViewStyleHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_info_size" />
+
+            <TextView
+                style="?attr/textViewStyleHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_info_tech" />
+
+            <TextView
+                style="?attr/textViewStyleHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_info_gov" />
+
+            <TextView
+                style="?attr/textViewStyleHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_warp_target_distance" />
+
+            <TextView
+                style="?attr/textViewStyleHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_info_police" />
+
+            <TextView
+                style="?attr/textViewStyleHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_info_pirates" />
+
+            <TextView
+                android:id="@+id/screen_warp_target_traders_header"
+                style="?attr/textViewStyleHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_info_traders"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/screen_warp_target_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/screen_warp_target_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/screen_warp_target_tech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/screen_warp_target_gov"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/screen_warp_target_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/screen_warp_target_police"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/screen_warp_target_pirates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/screen_warp_target_traders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/screen_warp_target_cost_layout"
+        style="@style/ScreenRow"
+        android:layout_below="@id/screen_warp_target_mainbody"
+        android:baselineAligned="true"
+        android:baselineAlignedChildIndex="1"
+        android:orientation="horizontal"
+        android:weightSum="11" >
+
+        <TextView
+            style="?attr/textViewStyleHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/screen_warp_target_cost" />
+
+        <TextView
+            android:id="@+id/screen_warp_target_cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:layout_alignBaseline="@id/screen_warp_target_cost_layout"
+        android:baselineAligned="true"
+        android:baselineAlignedChildIndex="0"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:weightSum="11" >
+
+        <Button
+            android:id="@+id/screen_warp_target_cost_specific"
+            style="?attr/buttonStyleRounded"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:onClick="pagerClick"
+            android:text="@string/screen_warp_target_cost_specific" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/screen_warp_target_toofar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/screen_warp_target_cost_layout"
+        android:layout_alignParentBottom="false"
+        android:text="@string/screen_warp_target_toofar"
+        android:visibility="invisible" />
+    
+    <Button
+        android:baselineAligned="false"
+        style="?attr/buttonStyleRounded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/screen_warp_target_toofar"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

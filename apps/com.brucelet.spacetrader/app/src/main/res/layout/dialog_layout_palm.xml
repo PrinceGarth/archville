@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2010, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="-8dip"
+    android:paddingRight="-8dip"
+    android:paddingTop="-8dp"
+    android:paddingBottom="-8dp" >
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:minHeight="48dp" >
+
+            <ImageButton
+                android:id="@+id/alertHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:contentDescription="@string/dialog_titlehelp"
+                android:src="?attr/infoIconDialog" />
+
+
+            <ImageButton
+                android:id="@+id/alertHelpDummy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="?attr/infoIconDialog"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/alertTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/alertHelp"
+                android:layout_toStartOf="@id/alertHelp"
+                android:layout_toRightOf="@id/alertHelpDummy"
+                android:layout_toEndOf="@id/alertHelpDummy"
+                android:ellipsize="end"
+                android:gravity="center_horizontal|center_vertical"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:textSize="20sp"
+                android:textAppearance="?attr/dialogTitleTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minHeight="64dp" >
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:divider="?android:attr/dividerHorizontal"
+        android:gravity="bottom"
+        android:minHeight="@dimen/alert_dialog_button_bar_height"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            style="?attr/dialogButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:divider="?android:attr/dividerVertical"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/positive"
+                style="?dialogButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="75dp"
+                android:maxLines="2"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/neutral"
+                style="?dialogButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="75dp"
+                android:maxLines="2"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/negative"
+                style="?dialogButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="75dp"
+                android:maxLines="2"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

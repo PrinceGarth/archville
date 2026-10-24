@@ -1,0 +1,19 @@
+# Sandbox/editor dotfiles in this directory are not part of the project
+/.*
+!/.gitignore
+!/.github/
+
+# Signing material and fdroid config (contains keystore passwords)
+/secrets/
+/fdroid/config.yml
+/fdroid/keystore.p12
+/fdroid/tmp/
+/fdroid/archive/
+/fdroid/repo/
+
+# Build outputs
+build/
+.gradle/
+local.properties
+*.apk
+/venv/

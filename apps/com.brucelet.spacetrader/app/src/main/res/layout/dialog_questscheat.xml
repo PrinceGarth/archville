@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dip"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip"
+    android:paddingTop="8dip" >
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_dragonfly" />
+
+        <TextView
+            android:id="@+id/dialog_questscheat_dragonfly"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_notavailable" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_monster" />
+
+        <TextView
+            android:id="@+id/dialog_questscheat_monster"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_notavailable" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_questscheat_artifact_title"
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_artifact" />
+
+        <TextView
+            android:id="@+id/dialog_questscheat_artifact"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_notavailable" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_disease" />
+
+        <TextView
+            android:id="@+id/dialog_questscheat_disease"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_notavailable" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_tribbles" />
+
+        <TextView
+            android:id="@+id/dialog_questscheat_tribbles"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_notavailable" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_jarek" />
+
+        <TextView
+            android:id="@+id/dialog_questscheat_jarek"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_notavailable" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_invasion" />
+
+        <TextView
+            android:id="@+id/dialog_questscheat_invasion"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_notavailable" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_experiment" />
+
+        <TextView
+            android:id="@+id/dialog_questscheat_experiment"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_notavailable" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_wild" />
+
+        <TextView
+            android:id="@+id/dialog_questscheat_wild"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_notavailable" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_reactor" />
+
+        <TextView
+            android:id="@+id/dialog_questscheat_reactor"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_notavailable" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_scarab" />
+
+        <TextView
+            android:id="@+id/dialog_questscheat_scarab"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_questscheat_notavailable" />
+    </LinearLayout>
+
+</LinearLayout>

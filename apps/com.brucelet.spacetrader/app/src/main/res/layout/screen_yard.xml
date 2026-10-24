@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+    
+    <TextView  
+        android:id="@+id/screen_yard_range"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start" />
+    
+    <TextView
+        android:id="@+id/screen_yard_tank"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:text="@string/screen_yard_tank" />
+    
+    <LinearLayout
+        style="@style/ScreenRow">
+        
+        <Button
+            android:id="@+id/screen_yard_fuelbutton"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_yard_fuelbutton" />
+        <Button
+            android:id="@+id/screen_yard_fullfuelbutton"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_yard_fullfuelbutton" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/screen_yard_hull"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:text="@string/screen_yard_hull" />
+    
+    <TextView
+        android:id="@+id/screen_yard_repair"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:text="@string/screen_yard_repair" />
+    
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_yard_repairbutton"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_yard_repairbutton" />
+
+        <Button
+            android:id="@+id/screen_yard_fullrepairbutton"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_yard_fullrepairbutton" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/screen_yard_ships"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:text="@string/screen_yard_ships" />
+
+    <Button
+        android:id="@+id/screen_yard_shipsbutton"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:text="@string/screen_yard_shipsbutton" />
+    
+    <TextView
+        android:id="@+id/screen_yard_buypod"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:text="@string/screen_yard_buypod" />
+
+    <Button
+        android:id="@+id/screen_yard_podbutton"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:text="@string/screen_yard_podbutton" />
+    
+    <TextView
+        android:id="@+id/screen_yard_credits"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:text="@string/format_cash" />
+        
+</LinearLayout>

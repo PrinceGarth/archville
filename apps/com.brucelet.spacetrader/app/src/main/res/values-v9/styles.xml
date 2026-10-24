@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ListViewStyle.Palm" parent="@style/ListViewPalm_ACWidgets">
+        <item name="android:listSelector">@drawable/list_selector_palm</item>
+        <item name="textAppearanceListItem">@style/PopupMenuText.Palm</item>
+        <item name="android:textColor">@color/primary_text_palm</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="ListViewDropDownStyle.Palm" parent="@style/DropDownListView.Palm_ab">
+        <item name="android:listSelector">@drawable/list_selector_palm</item>
+        <item name="android:textColor">@color/primary_text_palm</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+    
+    <style name="ScrollView.Palm" parent="@android:style/Widget.ScrollView">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+    
+    <style name="AutoCompleteTextView.Palm" parent="@style/AutoCompleteTextViewPalm_ACWidgets">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:dropDownSelector">@drawable/list_selector_palm</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:duplicateParentState="true">
+
+    <TextView
+        android:id="@+id/spinner_shortcut"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textAppearance="?attr/actionMenuTextAppearance"
+        android:typeface="monospace"
+        android:textColor="?attr/pressableTextColor"
+        android:duplicateParentState="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/dialog_shortcut_spacer"
+        android:textColor="?attr/pressableTextColor"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:duplicateParentState="true" />
+
+    <TextView
+        android:id="@+id/spinner_text"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:gravity="start|center_vertical"
+        android:singleLine="true"
+        android:textColor="?attr/pressableTextColor"
+        android:duplicateParentState="true" />
+
+</LinearLayout>

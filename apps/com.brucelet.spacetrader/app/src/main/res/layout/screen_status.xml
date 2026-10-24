@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/screen_status_cheat"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/screen_status_cheat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="@string/screen_status_name" />
+
+                <TextView
+                    android:id="@+id/screen_status_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="7" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="@string/screen_status_pilot" />
+
+                <TextView
+                    android:id="@+id/screen_status_pilot"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.7"
+                    android:text="@string/screen_status_kills" />
+
+                <TextView
+                    android:id="@+id/screen_status_kills"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.3" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="@string/screen_status_fighter" />
+
+                <TextView
+                    android:id="@+id/screen_status_fighter"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.7"
+                    android:text="@string/screen_status_time" />
+
+                <TextView
+                    android:id="@+id/screen_status_time"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.3" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="@string/screen_status_trader" />
+
+                <TextView
+                    android:id="@+id/screen_status_trader"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.7"
+                    android:text="@string/screen_status_cash" />
+
+                <TextView
+                    android:id="@+id/screen_status_cash"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.3" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="@string/screen_status_engineer" />
+
+                <TextView
+                    android:id="@+id/screen_status_engineer"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.7"
+                    android:text="@string/screen_status_debt" />
+
+                <TextView
+                    android:id="@+id/screen_status_debt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.3" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/screen_status_worth" />
+
+                <TextView
+                    android:id="@+id/screen_status_worth"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/screen_status_rep" />
+
+                <TextView
+                    android:id="@+id/screen_status_rep"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/screen_status_police" />
+
+                <TextView
+                    android:id="@+id/screen_status_police"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ScreenRow" >
+
+                <TextView
+                    style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/screen_status_diff" />
+
+                <TextView
+                    android:id="@+id/screen_status_diff"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/spacer"
+        layout="@layout/screen_status_spacer" />
+
+    <LinearLayout
+        android:id="@+id/screen_status_buttons"
+        style="@style/ScreenRow"
+        android:layout_below="@id/spacer"
+        android:gravity="start" >
+
+        <Button
+            android:id="@+id/screen_status_quests_button"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_status_quests_button" />
+
+        <Button
+            android:id="@+id/screen_status_ship_button"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_status_ship_button" />
+
+        <Button
+            android:id="@+id/screen_status_cargo_button"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_status_cargo_button" />
+    </LinearLayout>
+
+</RelativeLayout>

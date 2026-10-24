@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dip"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip"
+    android:paddingTop="8dip">
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/screen_warp_target_cost_specific_merc" />
+
+        <TextView
+            android:id="@+id/screen_warp_target_cost_specific_merc"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/screen_warp_target_cost_specific_ins" />
+
+        <TextView
+            android:id="@+id/screen_warp_target_cost_specific_ins"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/screen_warp_target_cost_specific_int" />
+
+        <TextView
+            android:id="@+id/screen_warp_target_cost_specific_int"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/screen_warp_target_cost_specific_tax" />
+
+        <TextView
+            android:id="@+id/screen_warp_target_cost_specific_tax"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/screen_warp_target_cost_specific_total" />
+
+        <TextView
+            android:id="@+id/screen_warp_target_cost_specific_total"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

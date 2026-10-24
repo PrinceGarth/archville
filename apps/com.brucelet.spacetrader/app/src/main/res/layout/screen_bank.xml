@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        style="?attr/textViewStyleHeader" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:text="@string/screen_bank_loan" />
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:text="@string/screen_bank_loan_debt"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/screen_bank_loan_debt"
+            android:layout_height="wrap_content"
+            android:text="@string/format_credits"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:text="@string/screen_bank_loan_max"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/screen_bank_loan_max"
+            android:layout_height="wrap_content"
+            android:text="@string/format_credits"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_bank_loan_get"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_bank_loan_get_title" />
+
+        <Button
+            android:id="@+id/screen_bank_loan_pay"
+            style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/screen_bank_loan_pay_title" />
+    </LinearLayout>
+
+    <TextView
+        style="?attr/textViewStyleHeader" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:text="@string/screen_bank_ins" />
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:text="@string/screen_bank_ins_ship"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/screen_bank_ins_ship"
+            android:layout_height="wrap_content"
+            android:text="@string/format_credits"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:text="@string/screen_bank_ins_noclaim"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/screen_bank_ins_noclaim"
+            android:layout_height="wrap_content"
+            android:text="@string/format_percent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <TextView
+            style="?attr/textViewStyleHeader" android:layout_height="wrap_content"
+            android:text="@string/screen_bank_ins_cost"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/screen_bank_ins_cost"
+            android:layout_height="wrap_content"
+            android:text="@string/format_dailycost"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/screen_bank_ins_buy"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:text="@string/screen_bank_ins_buy" />
+
+    <TextView
+        android:id="@+id/screen_bank_credits"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:text="@string/format_cash" />
+
+</LinearLayout>

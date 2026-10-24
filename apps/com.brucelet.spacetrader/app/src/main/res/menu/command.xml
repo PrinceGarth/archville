@@ -1,0 +1,74 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto" >
+
+    <group android:id="@+id/menu_group_command" >
+
+        <item
+            android:id="@id/screen_buy"
+            android:alphabeticShortcut="@string/shortcut_buy"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/command_dropdown_buy"/>
+        <item
+            android:id="@id/screen_sell"
+            android:alphabeticShortcut="@string/shortcut_sell"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/command_dropdown_sell"/>
+        <item
+            android:id="@id/screen_yard"
+            android:alphabeticShortcut="@string/shortcut_yard"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/command_dropdown_yard"/>
+        <item
+            android:id="@id/screen_buyeq"
+            android:alphabeticShortcut="@string/shortcut_buyeq"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/command_dropdown_buyeq"/>
+        <item
+            android:id="@id/screen_selleq"
+            android:alphabeticShortcut="@string/shortcut_selleq"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/command_dropdown_selleq"/>
+        <item
+            android:id="@id/screen_personnel"
+            android:alphabeticShortcut="@string/shortcut_personnel"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/command_dropdown_personnel"/>
+        <item
+            android:id="@id/screen_bank"
+            android:alphabeticShortcut="@string/shortcut_bank"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/command_dropdown_bank"/>
+        <item
+            android:id="@id/screen_info"
+            android:alphabeticShortcut="@string/shortcut_info"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/command_dropdown_info"/>
+        <item
+            android:id="@id/screen_status"
+            android:alphabeticShortcut="@string/shortcut_status"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/command_dropdown_status"/>
+        <item
+            android:id="@id/screen_chart"
+            android:alphabeticShortcut="@string/shortcut_chart"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/command_dropdown_chart"/>
+        <item
+            android:id="@id/screen_warp"
+            android:alphabeticShortcut="@string/shortcut_warp"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/command_dropdown_warp"/>
+    </group>
+
+</menu>

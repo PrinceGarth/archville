@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/screen_yard_buyship_flea_buy"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_buy" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_gnat_buy"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_buy" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_firefly_buy"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_buy" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_mosquito_buy"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_buy" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_bumblebee_buy"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_buy" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_beetle_buy"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_buy" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_hornet_buy"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_buy" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_grasshopper_buy"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_buy" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_termite_buy"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_buy" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_wasp_buy"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_buy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/shiptype_flea" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/shiptype_gnat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/shiptype_firefly" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/shiptype_mosquito" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/shiptype_bumblebee" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/shiptype_beetle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/shiptype_hornet" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/shiptype_grasshopper" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/shiptype_termite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/shiptype_wasp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/screen_yard_buyship_flea_info"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_info" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_gnat_info"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_info" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_firefly_info"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_info" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_mosquito_info"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_info" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_bumblebee_info"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_info" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_beetle_info"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_info" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_hornet_info"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_info" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_grasshopper_info"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_info" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_termite_info"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_info" />
+
+            <Button
+                android:id="@+id/screen_yard_buyship_wasp_info"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generic_info" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/screen_yard_buyship_flea_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_yard_buyship_gnat_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_yard_buyship_firefly_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_yard_buyship_mosquito_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_yard_buyship_bumblebee_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_yard_buyship_beetle_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_yard_buyship_hornet_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_yard_buyship_grasshopper_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_yard_buyship_termite_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_yard_buyship_wasp_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/screen_yard_buyship_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/format_cash" />
+
+</LinearLayout>

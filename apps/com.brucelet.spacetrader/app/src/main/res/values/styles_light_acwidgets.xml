@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="EditTextLight_ACWidgets" parent="android:Widget.EditText">
+	  <item name="android:background">@drawable/light_acwidgets_edit_text_holo_light</item>
+	  <item name="android:textColor">#000000</item>
+  </style>
+
+  <style name="AutoCompleteTextViewLight_ACWidgets" parent="android:Widget.AutoCompleteTextView">
+      <item name="android:dropDownSelector">@drawable/light_acwidgets_list_selector_holo_light</item>
+	  <item name="android:background">@drawable/light_acwidgets_edit_text_holo_light</item>
+	  <item name="android:textColor">#000000</item>
+  </style>
+
+  <style name="CheckBoxLight_ACWidgets" parent="android:Widget.CompoundButton.CheckBox">
+      <item name="android:button">@drawable/light_acwidgets_btn_check_holo_light</item>
+  </style>
+
+  <style name="RadioButtonLight_ACWidgets" parent="android:Widget.CompoundButton.RadioButton">
+      <item name="android:button">@drawable/light_acwidgets_btn_radio_holo_light</item>
+  </style>
+
+  <style name="ButtonLight_ACWidgets" parent="android:Widget.Button">
+	  <item name="android:background">@drawable/light_acwidgets_btn_default_holo_light</item>
+	  <item name="android:minHeight">48dip</item>
+	  <item name="android:minWidth">64dip</item>
+	  <item name="android:textColor">#000000</item>
+  </style>
+
+  <style name="ImageButtonLight_ACWidgets" parent="android:Widget.ImageButton">
+	  <item name="android:background">@drawable/light_acwidgets_btn_default_holo_light</item>
+  </style>
+
+  <style name="SpinnerLight_ACWidgets" parent="android:Widget.Spinner">
+      <item name="android:background">@drawable/light_acwidgets_spinner_background_holo_light</item>
+      <item name="android:dropDownSelector">@drawable/light_acwidgets_list_selector_holo_light</item>
+  </style>
+
+  <style name="SpinnerDropDownItemLight_ACWidgets" parent="android:Widget.DropDownItem.Spinner">
+      <item name="android:checkMark">@drawable/light_acwidgets_btn_radio_holo_light</item>
+  </style>
+  <style name="ProgressBarLight_ACWidgets" parent="android:Widget.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/light_acwidgets_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/light_acwidgets_progress_indeterminate_horizontal_holo_light</item>
+      <item name="android:minHeight">16dip</item>
+      <item name="android:maxHeight">16dip</item>
+  </style>
+
+  <style name="ListViewLight_ACWidgets" parent="android:Widget.ListView">
+      <item name="android:listSelector">@drawable/light_acwidgets_list_selector_holo_light</item>
+  </style>
+
+  <style name="ListViewLight_ACWidgets.White" parent="android:Widget.ListView.White">
+      <item name="android:listSelector">@drawable/light_acwidgets_list_selector_holo_light</item>
+  </style>
+
+  <style name="SpinnerItemLight_ACWidgets" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+      <item name="android:textColor">#000000</item>
+  </style>
+
+</resources>

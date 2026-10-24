@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="Light_ACWidgets" parent="@style/_Light_ACWidgets"/>
+
+  <style name="_Light_ACWidgets" parent="Theme.AppCompat.Light">
+
+    <item name="android:editTextStyle">@style/EditTextLight_ACWidgets</item>
+
+    <item name="android:textColorHighlight">#9933b5e5</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewLight_ACWidgets</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxLight_ACWidgets</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonLight_ACWidgets</item>
+
+    <item name="android:buttonStyle">@style/ButtonLight_ACWidgets</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonLight_ACWidgets</item>
+
+    <item name="android:spinnerStyle">@style/SpinnerLight_ACWidgets</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemLight_ACWidgets</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarLight_ACWidgets</item>
+
+    <item name="android:listViewStyle">@style/ListViewLight_ACWidgets</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewLight_ACWidgets.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemLight_ACWidgets</item>
+
+  </style>
+
+</resources>

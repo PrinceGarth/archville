@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/drawable_base"
+        android:drawable="@drawable/dragonfly_base"/>
+    <item
+        android:id="@+id/drawable_shield"
+        android:drawable="@drawable/dragonfly_shield_clip"/>
+    <item
+        android:id="@+id/drawable_damage"
+        android:drawable="@drawable/dragonfly_damage_clip"/>
+
+</layer-list>

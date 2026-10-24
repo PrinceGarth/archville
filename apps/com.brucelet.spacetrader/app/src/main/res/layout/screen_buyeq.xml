@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_buyeq_pulse_button"
+            style="?attr/buttonStyleSquare" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:text="@string/generic_buy" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="@string/weapon_pulse" />
+
+        <TextView
+            android:id="@+id/screen_buyeq_pulse_price"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="@string/format_credits"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_buyeq_beam_button"
+            style="?attr/buttonStyleSquare" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:text="@string/generic_buy" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="@string/weapon_beam" />
+
+        <TextView
+            android:id="@+id/screen_buyeq_beam_price"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="@string/format_credits"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_buyeq_military_button"
+            style="?attr/buttonStyleSquare" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:text="@string/generic_buy" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="@string/weapon_military" />
+
+        <TextView
+            android:id="@+id/screen_buyeq_military_price"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="@string/format_credits"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_buyeq_energy_button"
+            style="?attr/buttonStyleSquare" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:text="@string/generic_buy" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="@string/shield_energy" />
+
+        <TextView
+            android:id="@+id/screen_buyeq_energy_price"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="@string/format_credits"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_buyeq_reflective_button"
+            style="?attr/buttonStyleSquare" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:text="@string/generic_buy" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="@string/shield_reflective" />
+
+        <TextView
+            android:id="@+id/screen_buyeq_reflective_price"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="@string/format_credits"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_buyeq_extrabays_button"
+            style="?attr/buttonStyleSquare" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:text="@string/generic_buy" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="@string/gadget_extrabays" />
+
+        <TextView
+            android:id="@+id/screen_buyeq_extrabays_price"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="@string/format_credits"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_buyeq_autorepair_button"
+            style="?attr/buttonStyleSquare" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:text="@string/generic_buy" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="@string/gadget_autorepair" />
+
+        <TextView
+            android:id="@+id/screen_buyeq_autorepair_price"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="@string/format_credits"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_buyeq_navigating_button"
+            style="?attr/buttonStyleSquare" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:text="@string/generic_buy" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="@string/gadget_navigating" />
+
+        <TextView
+            android:id="@+id/screen_buyeq_navigating_price"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="@string/format_credits"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_buyeq_targeting_button"
+            style="?attr/buttonStyleSquare" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:text="@string/generic_buy" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="@string/gadget_targeting" />
+
+        <TextView
+            android:id="@+id/screen_buyeq_targeting_price"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="@string/format_credits"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ScreenRow" >
+
+        <Button
+            android:id="@+id/screen_buyeq_cloaking_button"
+            style="?attr/buttonStyleSquare" android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:text="@string/generic_buy" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="@string/gadget_cloaking" />
+
+        <TextView
+            android:id="@+id/screen_buyeq_cloaking_price"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="@string/format_credits"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/screen_buyeq_credits"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:text="@string/format_cash" />
+
+</LinearLayout>

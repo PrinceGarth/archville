@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/screen_buy_water_amount"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/screen_buy_furs_amount"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/screen_buy_food_amount"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/screen_buy_ore_amount"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/screen_buy_games_amount"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/screen_buy_firearms_amount"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/screen_buy_medicine_amount"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/screen_buy_machinery_amount"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/screen_buy_narcotics_amount"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/screen_buy_robots_amount"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/screen_buy_water_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/tradeitem_water" />
+
+            <TextView
+                android:id="@+id/screen_buy_furs_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/tradeitem_furs" />
+
+            <TextView
+                android:id="@+id/screen_buy_food_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/tradeitem_food" />
+
+            <TextView
+                android:id="@+id/screen_buy_ore_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/tradeitem_ore" />
+
+            <TextView
+                android:id="@+id/screen_buy_games_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/tradeitem_games" />
+
+            <TextView
+                android:id="@+id/screen_buy_firearms_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/tradeitem_firearms" />
+
+            <TextView
+                android:id="@+id/screen_buy_medicine_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/tradeitem_medicine" />
+
+            <TextView
+                android:id="@+id/screen_buy_machinery_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/tradeitem_machinery" />
+
+            <TextView
+                android:id="@+id/screen_buy_narcotics_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/tradeitem_narcotics" />
+
+            <TextView
+                android:id="@+id/screen_buy_robots_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/tradeitem_robots" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/screen_buy_water_max"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/generic_max" />
+
+            <Button
+                android:id="@+id/screen_buy_furs_max"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/generic_max" />
+
+            <Button
+                android:id="@+id/screen_buy_food_max"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/generic_max" />
+
+            <Button
+                android:id="@+id/screen_buy_ore_max"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/generic_max" />
+
+            <Button
+                android:id="@+id/screen_buy_games_max"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/generic_max" />
+
+            <Button
+                android:id="@+id/screen_buy_firearms_max"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/generic_max" />
+
+            <Button
+                android:id="@+id/screen_buy_medicine_max"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/generic_max" />
+
+            <Button
+                android:id="@+id/screen_buy_machinery_max"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/generic_max" />
+
+            <Button
+                android:id="@+id/screen_buy_narcotics_max"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/generic_max" />
+
+            <Button
+                android:id="@+id/screen_buy_robots_max"
+                style="?attr/buttonStyleSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/generic_max" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/screen_buy_water_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_buy_furs_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_buy_food_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_buy_ore_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_buy_games_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_buy_firearms_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_buy_medicine_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_buy_machinery_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_buy_narcotics_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+
+            <TextView
+                android:id="@+id/screen_buy_robots_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:layout_width="match_parent" >
+
+        <TextView
+            android:id="@+id/screen_buy_bays"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/format_bays" />
+
+        <TextView
+            android:id="@+id/screen_buy_credits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/format_cash" />
+    </LinearLayout>
+
+</LinearLayout>

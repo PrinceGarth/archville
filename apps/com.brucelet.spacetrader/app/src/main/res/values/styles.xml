@@ -1,0 +1,770 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices. -->
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat">
+        <!--Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here. -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="ActivityTheme.Load" parent="@style/Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    
+    <style name="ActivityTheme.Base.Light" parent="@style/Theme.Light_ab">
+        <item name="actionButtonStyle">@style/ActionButtonStyle.Light</item>
+        <item name="actionMenuTextAppearance">@style/ActionButtonText.Light</item>
+        <item name="actionBarWidgetTheme">@style/ActionBarWidgetTheme.Light</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionModeCloseButtonStyle.Light</item>
+        <item name="textAppearanceLargePopupMenu">?android:textAppearanceMedium</item>
+        <item name="listChoiceBackgroundIndicator">?selectableItemBackground</item>
+        
+        <item name="selectableItemBackground">@drawable/dark_acwidgets_list_selector_holo_dark</item>
+    </style>
+
+    <style name="ActivityTheme.Base.Dark" parent="@style/Theme.Dark_ab">
+        <item name="actionButtonStyle">@style/ActionButtonStyle.Dark</item>
+        <item name="actionMenuTextAppearance">@style/ActionButtonText.Dark</item>
+        <item name="actionBarWidgetTheme">@style/ActionBarWidgetTheme.Dark</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionModeCloseButtonStyle.Dark</item>
+        <item name="textAppearanceLargePopupMenu">?android:textAppearanceMedium</item>
+        <item name="listChoiceBackgroundIndicator">?selectableItemBackground</item>
+        
+        <item name="selectableItemBackground">@drawable/dark_acwidgets_list_selector_holo_dark</item>
+    </style>
+
+    <style name="ActivityTheme.Base.Palm" parent="@style/Theme.Palm_ab">
+        <item name="actionButtonStyle">@style/ActionButtonStyle.Palm</item>
+        <item name="actionMenuTextAppearance">@style/ActionButtonText.Palm</item>
+        <item name="actionBarWidgetTheme">@style/ActionBarWidgetTheme.Palm</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionModeCloseButtonStyle.Palm</item>
+        <item name="textAppearanceLargePopupMenu">@style/PopupMenuText.Palm</item>
+        <item name="listChoiceBackgroundIndicator">@drawable/list_selector_palm</item>
+        
+        <item name="actionBarStyle">@style/ActionBarStyle.Palm</item>
+        <item name="actionDropDownStyle">@style/ActionDropDownStyle.Palm</item>
+        <item name="popupMenuStyle">@style/PopupMenuStyle.Palm</item>
+        <item name="dropDownListViewStyle">@style/ListViewDropDownStyle.Palm</item>
+        <item name="titleTextStyle">@style/TitleText.Palm</item> 
+        <item name="selectableItemBackground">@drawable/item_background_palm</item>
+        <item name="actionBarDivider">@null</item>
+        <item name="dividerHorizontal">@drawable/horizontal_divider_palm</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_action_navigation_accept_palm</item>
+        <item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_mtrl_white</item>
+        
+        <item name="actionMenuTextColor">@color/primary_text_palm</item>
+    </style>
+    
+    
+    <style name="ActivityTheme.Light" parent="ActivityTheme.Base.Light">  
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorAccent">@color/light_acwidgets_color</item>
+        <item name="android:textColorLink">?colorAccent</item>
+        
+        <item name="actionBarBackgroundDocked">@drawable/ab_solid_light_ab</item>
+        <item name="actionBarBackgroundDefault">@drawable/ab_solid_light_ab</item>
+        <item name="actionBarTitleTextStyle">@style/TitleText.Light</item>
+        <item name="actionModeSpinnerTextStyle">@style/TitleText.Light</item>
+        <item name="roundedButtonDrawable">@drawable/btn_rounded_holo_light</item>
+        <item name="squareButtonDrawable">@drawable/btn_square_holo_light</item>
+        <item name="strokeColor">@color/stroke_holo_light</item>
+        <item name="startArrow">@drawable/arrow_start_black</item>
+        <item name="endArrow">@drawable/arrow_end_black</item>>
+        <item name="avgPriceListBackground">?selectableItemBackground</item>
+        <item name="infoIconEncounter">@drawable/info_holo_light</item>
+        <item name="infoIconDialog">@drawable/info_holo_blue</item>
+        <item name="dialogTitleTextStyle">@style/TextAppearance.DialogWindowTitle.Light</item>
+        <item name="actionBarTitleBackground">?selectableItemBackground</item>
+        <item name="dialogLayout">@layout/dialog_layout_holo</item>
+        <item name="dialogDividerColor">@color/light_acwidgets_color</item>
+        <item name="pressableTextColor">?android:textColorPrimary</item>
+        <item name="dialogBackgroundStyle">@style/Dialog.Light</item>
+        <item name="dialogButtonBarStyle">@style/ButtonBar.Dialog.Light</item>
+        <item name="dialogButtonStyle">@style/Button.Dialog.Light</item>
+        <item name="dialogDivider">@drawable/list_divider_holo_light</item>
+        <item name="statusBarPadding">0dp</item>
+        <item name="footerButtonStyle">?actionButtonStyle</item>
+        <item name="listDividerColor">#1f000000</item>
+
+        <item name="android:textViewStyle">@style/TextView.Light</item>
+        <item name="android:editTextStyle">@style/EditText.Light</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextView.Light</item>
+        <item name="textViewStyleHeader">@style/TextView.Header.Light</item>
+        <item name="buttonStyleRounded">@style/Button.Rounded.Light</item>
+        <item name="buttonStyleSquare">@style/Button.Square.Light</item>
+        
+        <item name="actionBarStyle">@style/ActionBarStyle.Light</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="android:checkboxStyle">@style/CheckBox.Light</item>
+        <item name="android:radioButtonStyle">@style/RadioButton.Light</item>
+        <item name="android:spinnerStyle">@style/SpinnerStyle.Light</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownStyle.Light</item>
+        <item name="spinnerDropDownItemStyle">@style/SpinnerDropDownStyle.Light</item>
+        <item name="selectableItemBackgroundBorderless">?selectableItemBackground</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="listPopupWindowStyle">@style/ListPopupMenuStyle.Light</item>
+
+        <item name="actionModeCopyDrawable">@drawable/abc_ic_menu_copy_mtrl_black</item>
+        <item name="actionModeCutDrawable">@drawable/abc_ic_menu_cut_mtrl_black</item>
+        <item name="actionModePasteDrawable">@drawable/abc_ic_menu_paste_mtrl_black</item>
+        <item name="actionModeSelectAllDrawable">@drawable/abc_ic_menu_selectall_mtrl_black</item>
+        <item name="actionModeCloseDrawable">@drawable/abc_ic_ab_back_mtrl_black</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_light_ab</item>
+    </style>
+    
+    <style name="ActivityTheme.Dark" parent="ActivityTheme.Base.Dark">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorAccent">@color/dark_acwidgets_color</item>
+        <item name="android:textColorLink">?colorAccent</item>
+        
+        <item name="actionBarBackgroundDocked">@drawable/ab_solid_dark_ab</item>
+        <item name="actionBarBackgroundDefault">@drawable/ab_solid_dark_ab</item>
+        <item name="actionBarTitleTextStyle">@style/TitleText.Dark</item>
+        <item name="actionModeSpinnerTextStyle">@style/TitleText.Dark</item>
+        <item name="roundedButtonDrawable">@drawable/btn_rounded_holo_dark</item>
+        <item name="squareButtonDrawable">@drawable/btn_square_holo_dark</item>
+        <item name="strokeColor">@color/stroke_holo_dark</item>
+        <item name="startArrow">@drawable/arrow_start_white</item>
+        <item name="endArrow">@drawable/arrow_end_white</item>
+        <item name="avgPriceListBackground">?selectableItemBackground</item>
+        <item name="infoIconEncounter">@drawable/info_holo_dark</item>
+        <item name="infoIconDialog">@drawable/info_holo_blue</item>
+        <item name="dialogTitleTextStyle">@style/TextAppearance.DialogWindowTitle.Dark</item>
+        <item name="actionBarTitleBackground">?selectableItemBackground</item>
+        <item name="dialogLayout">@layout/dialog_layout_holo</item>
+        <item name="dialogDividerColor">@color/dark_acwidgets_color</item>
+        <item name="pressableTextColor">?android:textColorPrimary</item>
+        <item name="dialogBackgroundStyle">@style/Dialog.Dark</item>
+        <item name="dialogButtonBarStyle">@style/ButtonBar.Dialog.Dark</item>
+        <item name="dialogButtonStyle">@style/Button.Dialog.Dark</item>
+        <item name="dialogDivider">@drawable/list_divider_holo_dark</item>
+        <item name="statusBarPadding">0dp</item>
+        <item name="footerButtonStyle">?actionButtonStyle</item>
+        <item name="listDividerColor">#1fffffff</item>
+
+        <item name="android:textViewStyle">@style/TextView.Dark</item>
+        <item name="android:editTextStyle">@style/EditText.Dark</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextView.Dark</item>
+        <item name="textViewStyleHeader">@style/TextView.Header.Dark</item>
+        <item name="buttonStyleRounded">@style/Button.Rounded.Dark</item>
+        <item name="buttonStyleSquare">@style/Button.Square.Dark</item>
+        
+        <item name="actionBarStyle">@style/ActionBarStyle.Dark</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:checkboxStyle">@style/CheckBox.Dark</item>
+        <item name="android:radioButtonStyle">@style/RadioButton.Dark</item>
+        <item name="android:spinnerStyle">@style/SpinnerStyle.Dark</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownStyle.Dark</item>
+        <item name="spinnerDropDownItemStyle">@style/SpinnerDropDownStyle.Dark</item>
+        <item name="selectableItemBackgroundBorderless">?selectableItemBackground</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="listPopupWindowStyle">@style/ListPopupMenuStyle.Dark</item>
+
+        <item name="actionModeCopyDrawable">@drawable/abc_ic_menu_copy_mtrl_white</item>
+        <item name="actionModeCutDrawable">@drawable/abc_ic_menu_cut_mtrl_white</item>
+        <item name="actionModePasteDrawable">@drawable/abc_ic_menu_paste_mtrl_white</item>
+        <item name="actionModeSelectAllDrawable">@drawable/abc_ic_menu_selectall_mtrl_white</item>
+        <item name="actionModeCloseDrawable">@drawable/abc_ic_ab_back_mtrl_white</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_dark_ab</item>
+    </style>
+    
+    <style name="ActivityTheme.Palm" parent="ActivityTheme.Base.Palm">  
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorAccent">@color/blue_palm</item>
+        <item name="android:textColorLink">?colorAccent</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+              
+        <item name="actionBarBackgroundDocked">@drawable/ab_solid_palm_cab</item>
+        <item name="actionBarBackgroundDefault">@drawable/ab_solid_palm_dab</item>
+        <item name="actionBarTitleTextStyle">@style/TitleText.Palm</item>
+        <item name="actionModeSpinnerTextStyle">@style/TitleText.Palm</item>
+        <item name="roundedButtonDrawable">@drawable/btn_rounded_palm</item>
+        <item name="squareButtonDrawable">@drawable/btn_square_palm</item>
+        <item name="strokeColor">@color/stroke_palm</item>
+        <item name="startArrow">@drawable/arrow_start_palm</item>
+        <item name="endArrow">@drawable/arrow_end_palm</item>
+        <item name="avgPriceListBackground">?selectableItemBackground</item>
+        <item name="infoIconEncounter">@drawable/info_white</item>
+        <item name="infoIconDialog">@drawable/info_white</item>
+        <item name="dialogTitleTextStyle">@style/TextAppearance.DialogWindowTitle.Palm</item>
+        <item name="actionBarTitleBackground">@drawable/ab_solid_palm_dab</item>
+        <item name="dialogLayout">@layout/dialog_layout_palm</item>
+        <item name="dialogDividerColor">@color/palm_acwidgets_color</item>
+        <item name="pressableTextColor">@color/primary_text_palm</item>
+        <item name="dialogBackgroundStyle">@style/Dialog.Palm</item>
+        <item name="dialogButtonBarStyle">@style/ButtonBar.Dialog.Palm</item>
+        <item name="dialogButtonStyle">@style/Button.Dialog.Palm</item>
+        <item name="dialogDivider">@android:color/transparent</item>
+        <item name="statusBarPadding">0dp</item>
+        <item name="footerButtonStyle">?actionButtonStyle</item>
+        <item name="listDividerColor">#ff000000</item>
+
+        <item name="actionButtonMarginTop">@dimen/action_bar_button_marginTop_palm</item>
+        <item name="actionButtonMarginBottom">@dimen/action_bar_button_marginBottom_palm</item>
+        
+        <item name="android:textViewStyle">@style/TextView.Palm</item>
+        <item name="android:editTextStyle">@style/EditText.Palm</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextView.Palm</item>
+        <item name="textViewStyleHeader">@style/TextView.Header.Palm</item>
+        <item name="buttonStyleRounded">@style/Button.Rounded.Palm</item>
+        <item name="buttonStyleSquare">@style/Button.Square.Palm</item>
+
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="android:checkboxStyle">@style/CheckBox.Palm</item>
+        <item name="android:radioButtonStyle">@style/RadioButton.Palm</item>
+        <item name="android:spinnerStyle">@style/SpinnerStyle.Palm</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownStyle.Palm</item>
+        <item name="spinnerDropDownItemStyle">@style/SpinnerDropDownStyle.Palm</item>
+        <item name="selectableItemBackgroundBorderless">?selectableItemBackground</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="listPopupWindowStyle">@style/ListPopupMenuStyle.Palm</item>
+
+        <item name="actionModeCopyDrawable">@drawable/abc_ic_menu_copy_mtrl_palm</item>
+        <item name="actionModeCutDrawable">@drawable/abc_ic_menu_cut_mtrl_palm</item>
+        <item name="actionModePasteDrawable">@drawable/abc_ic_menu_paste_mtrl_palm</item>
+        <item name="actionModeSelectAllDrawable">@drawable/abc_ic_menu_selectall_mtrl_palm</item>
+        
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:horizontalDivider">@drawable/horizontal_divider_palm</item>
+        <item name="android:listViewStyle">@style/ListViewStyle.Palm</item>
+        <item name="android:divider">@drawable/horizontal_divider_palm</item>
+        <item name="android:scrollViewStyle">@style/ScrollView.Palm</item>
+        
+        <item name="android:listDivider">@null</item>
+        <item name="android:listSelector">@drawable/list_selector_palm</item>
+        
+    </style>
+    
+    <style name="ActionBarStyle.Light" parent="@style/ActionBar.Solid.Light_ab">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetRight">0dp</item>
+    </style>
+    
+    <style name="ActionBarStyle.Dark" parent="@style/ActionBar.Solid.Dark_ab">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetRight">0dp</item>
+    </style>
+    
+    <style name="ActionBarStyle.Palm" parent="@style/ActionBar.Transparent.Palm_ab">
+        <item name="android:background">@drawable/cab_background_top_palm_ab</item>
+        <item name="background">@drawable/cab_background_top_palm_ab</item>
+        <item name="titleTextStyle">@style/TitleText.Palm</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetRight">0dp</item>
+    </style>
+
+    <style name="ActionButtonStyle.Light" parent="@style/Widget.AppCompat.Light.ActionButton">
+        <item name="android:minWidth">@dimen/action_button_minsize</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:background">@drawable/btn_cab_done_light_ab</item>
+    </style>
+
+    <style name="ActionButtonStyle.Light.Dialog" parent="@style/Widget.AppCompat.Light.ActionButton">
+        <item name="android:background">@drawable/btn_cab_done_light_ab</item>
+    </style>
+    
+    <style name="ActionButtonStyle.Dark" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">@dimen/action_button_minsize</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:background">@drawable/btn_cab_done_dark_ab</item>
+    </style>
+
+    <style name="ActionButtonStyle.Dark.Dialog" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="android:background">@drawable/btn_cab_done_dark_ab</item>
+    </style>
+    
+    <style name="ActionButtonStyle.Palm" parent="@style/Widget.AppCompat.Light.ActionButton">
+        <item name="android:minWidth">@dimen/action_button_minsize</item>
+        <item name="android:minHeight">@dimen/action_button_minsize</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">@dimen/action_bar_button_marginTop_palm</item>
+        <item name="android:layout_marginBottom">@dimen/action_bar_button_marginBottom_palm</item>
+        <item name="android:background">@drawable/btn_square_palm</item>
+    </style>
+
+    <style name="ActionButtonStyle.Palm.Dialog" parent="@style/Widget.AppCompat.Light.ActionButton">
+        <item name="android:background">@drawable/item_background_palm</item>
+    </style>
+    
+    <style name="ActionModeCloseButtonStyle.Light" parent="@style/ActionButton.CloseMode.Light_ab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:background">@drawable/btn_cab_done_light_ab</item>
+    </style>
+    
+    <style name="ActionModeCloseButtonStyle.Dark" parent="@style/ActionButton.CloseMode.Dark_ab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:background">@drawable/btn_cab_done_dark_ab</item>
+    </style>
+    
+    <style name="ActionModeCloseButtonStyle.Palm" parent="@style/ActionButton.CloseMode.Palm_ab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:drawable">@drawable/ic_action_navigation_accept_palm</item>
+    </style>
+    
+    <style name="ActionBarWidgetTheme.Light" parent="ActivityTheme.Light">
+        <item name="android:textAppearance">@style/ActionButtonText.Light</item>
+    </style>
+    
+    <style name="ActionBarWidgetTheme.Dark" parent="ActivityTheme.Dark">
+        <item name="android:textAppearance">@style/ActionButtonText.Dark</item>
+    </style>
+    
+    <style name="ActionBarWidgetTheme.Palm" parent="ActivityTheme.Palm">
+        <item name="android:textAppearance">@style/ActionButtonText.Palm</item>
+        <item name="android:divider">@null</item>
+    </style>
+    
+    <style name="Dialog.Light" parent="">
+        <item name="top">@drawable/dialog_top_holo_light</item>
+        <item name="middle">@drawable/dialog_middle_holo_light</item>
+        <item name="bottom">@drawable/dialog_bottom_holo_light</item>
+    </style>
+    
+    <style name="Dialog.Dark" parent="">
+        <item name="top">@drawable/dialog_top_holo_dark</item>
+        <item name="middle">@drawable/dialog_middle_holo_dark</item>
+        <item name="bottom">@drawable/dialog_bottom_holo_dark</item>
+    </style>
+    
+    <style name="Dialog.Palm" parent="">
+        <item name="top">@drawable/dialog_top_palm</item>
+        <item name="middle">@drawable/dialog_middle_palm</item>
+        <item name="bottom">@drawable/dialog_bottom_palm</item>
+    </style>
+    
+    <style name="ButtonBar.Dialog.Light" parent="">
+    </style>
+    
+    <style name="ButtonBar.Dialog.Dark" parent="">
+    </style>
+    
+    <style name="ButtonBar.Dialog.Palm" parent="">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+    
+    <style name="Button.Dialog.Light" parent="@style/Button.Square.Light">
+        <item name="android:background">@drawable/light_acwidgets_list_selector_holo_light</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:minHeight">@dimen/alert_dialog_button_bar_height</item>
+    </style>
+    
+    <style name="Button.Dialog.Dark" parent="@style/Button.Square.Dark">
+        <item name="android:background">@drawable/dark_acwidgets_list_selector_holo_dark</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:minHeight">@dimen/alert_dialog_button_bar_height</item>
+    </style>
+    
+    <style name="Button.Dialog.Palm" parent="@style/Button.Rounded.Palm">
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/primary_text_palm</item>
+        <item name="android:minHeight">36dp</item>
+    </style>
+    
+    <style name="ActionButtonText.Light" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+    <style name="ActionButtonText.Dark" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+    <style name="ActionButtonText.Palm" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@color/primary_text_palm</item>
+    </style>
+    
+    <style name="CheckBox.Light" parent="@style/CheckBoxLight_ACWidgets">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="CheckBox.Dark" parent="@style/CheckBoxDark_ACWidgets">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="CheckBox.Palm" parent="@style/CheckBoxPalm_ACWidgets">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="RadioButton.Light" parent="@style/RadioButtonLight_ACWidgets">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="RadioButton.Dark" parent="@style/RadioButtonDark_ACWidgets">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="RadioButton.Palm" parent="@style/RadioButtonPalm_ACWidgets">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="SpinnerStyle.Light" parent="@style/SpinnerLight_ACWidgets">
+    </style>
+    
+    <style name="SpinnerDropDownStyle.Light" parent="@style/SpinnerDropDownItemLight_ACWidgets">
+    </style>
+    
+    <style name="SpinnerStyle.Dark" parent="@style/SpinnerDark_ACWidgets">
+    </style>
+    
+    <style name="SpinnerDropDownStyle.Dark" parent="@style/SpinnerDropDownItemDark_ACWidgets">
+    </style>
+    
+    <style name="SpinnerStyle.Palm" parent="@style/SpinnerPalm_ACWidgets">
+        <item name="android:textColor">@color/primary_text_palm</item>
+        <item name="android:background">@drawable/spinner_background_palm</item>
+        <item name="android:dropDownSelector">@drawable/list_selector_palm</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_palm</item>
+    </style>
+    
+    <style name="SpinnerDropDownStyle.Palm" parent="@style/SpinnerDropDownItemPalm_ACWidgets">
+        <item name="android:textColor">@color/primary_text_palm</item>
+    </style>
+    
+    <style name="ActionDropDownStyle.Palm" parent="@style/DropDownNav.Palm_ab">
+        <item name="android:textColor">@color/primary_text_palm</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:dropDownSelector">@drawable/list_selector_palm</item>
+    </style>
+     
+    <style name="PopupMenuStyle.Palm" parent="@style/PopupMenu.Palm_ab">
+        <item name="android:dropDownSelector">?attr/selectableItemBackground</item>
+    </style>
+    
+    <style name="PopupMenuText.Palm" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" >
+        <item name="android:textColor">@color/primary_text_palm</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ListPopupMenuStyle.Light" parent="Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/dialog_full_holo_light</item>
+    </style>
+
+    <style name="ListPopupMenuStyle.Dark" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/dialog_full_holo_dark</item>
+    </style>
+
+    <style name="ListPopupMenuStyle.Palm" parent="Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/dialog_full_palm</item>
+    </style>
+    
+    <style name="ListViewStyle.Palm" parent="@style/ListViewPalm_ACWidgets" >
+        <item name="android:listSelector">@drawable/list_selector_palm</item>
+        <item name="textAppearanceListItem">@style/PopupMenuText.Palm</item>
+        <item name="android:textColor">@color/primary_text_palm</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+    
+    <style name="ListViewDropDownStyle.Palm" parent="@style/DropDownListView.Palm_ab">
+        <item name="android:listSelector">@drawable/list_selector_palm</item>
+        <item name="android:textColor">@color/primary_text_palm</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+    
+    <style name="ScrollView.Palm" parent="@android:style/Widget.ScrollView">
+        <item name="android:fadingEdge">none</item>
+    </style>
+    
+    <style name="TitleText.Light" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    
+    <style name="TitleText.Dark" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    <style name="TitleText.Palm" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    <style name="TextAppearance.DialogWindowTitle.Light" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:textColor">@color/light_acwidgets_color</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    
+    <style name="TextAppearance.DialogWindowTitle.Dark" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:textColor">@color/dark_acwidgets_color</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    
+    <style name="TextAppearance.DialogWindowTitle.Palm" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    
+        
+    <style name="RootLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">top|center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ScreenRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="HorizontalBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_width</item>
+        <item name="android:background">?attr/strokeColor</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    
+    
+    
+    <style name="TextView.Light" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    
+    <style name="TextView.Header.Light" parent="TextView.Light">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditText.Light" parent="@style/EditTextLight_ACWidgets">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="AutoCompleteTextView.Light" parent="@style/AutoCompleteTextViewLight_ACWidgets">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="Button.Rounded.Light" parent="@style/ButtonLight_ACWidgets">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:background">?attr/roundedButtonDrawable</item>
+        <item name="android:minWidth">@dimen/button_minsize</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingLeft">@dimen/button_padding</item>
+        <item name="android:paddingRight">@dimen/button_padding</item>
+        <item name="android:paddingTop">@dimen/button_padding</item>
+        <item name="android:paddingBottom">@dimen/button_padding</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    
+    <style name="Button.Square.Light" parent="@style/Button.Rounded.Light">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/squareButtonDrawable</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    
+    <style name="TextView.Dark" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="TextView.Header.Dark" parent="TextView.Dark">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditText.Dark" parent="@style/EditTextDark_ACWidgets">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="AutoCompleteTextView.Dark" parent="@style/AutoCompleteTextViewDark_ACWidgets">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="Button.Rounded.Dark" parent="@style/ButtonDark_ACWidgets">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:background">?attr/roundedButtonDrawable</item>
+        <item name="android:minWidth">@dimen/button_minsize</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingLeft">@dimen/button_padding</item>
+        <item name="android:paddingRight">@dimen/button_padding</item>
+        <item name="android:paddingTop">@dimen/button_padding</item>
+        <item name="android:paddingBottom">@dimen/button_padding</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    
+    <style name="Button.Square.Dark" parent="@style/Button.Rounded.Dark">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/squareButtonDrawable</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    
+    <style name="TextView.Palm" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="TextView.Header.Palm" parent="TextView.Palm">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditText.Palm" parent="@style/EditTextPalm_ACWidgets">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="AutoCompleteTextView.Palm" parent="@style/AutoCompleteTextViewPalm_ACWidgets">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:dropDownSelector">@drawable/list_selector_palm</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+
+    <style name="Button.Rounded.Palm" parent="@style/ButtonPalm_ACWidgets">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_text_palm</item>
+        <item name="android:background">?attr/roundedButtonDrawable</item>
+        <item name="android:minWidth">@dimen/button_minsize</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingLeft">@dimen/button_padding</item>
+        <item name="android:paddingRight">@dimen/button_padding</item>
+        <item name="android:paddingTop">@dimen/button_padding</item>
+        <item name="android:paddingBottom">@dimen/button_padding</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    
+    <style name="Button.Square.Palm" parent="@style/Button.Rounded.Palm">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/squareButtonDrawable</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    
+
+</resources>

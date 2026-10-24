@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_newspaper"
+    style="@style/RootLayout"
+    android:gravity="start"
+    android:orientation="vertical" 
+    android:paddingBottom="8dip"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip"
+    android:paddingTop="8dip">
+
+    <TextView
+        android:id="@+id/dialog_newspaper_headline1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:singleLine="false"
+         />
+
+    <TextView
+        android:id="@+id/dialog_newspaper_headline2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/dialog_newspaper_headline3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/dialog_newspaper_headline4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/dialog_newspaper_headline5"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:singleLine="false" />
+
+</LinearLayout>

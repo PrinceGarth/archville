@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/list_selector_palm" android:bottom="@dimen/action_bar_button_marginBottom_palm"/>
+</layer-list>

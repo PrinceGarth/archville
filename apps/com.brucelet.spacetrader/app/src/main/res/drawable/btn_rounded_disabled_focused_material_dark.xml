@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+
+            <corners android:radius="@dimen/corner_radius" />
+
+            <gradient android:startColor="@color/btn_default_normal_material_dark" android:endColor="@color/btn_default_normal_material_dark"/>
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+
+            <stroke
+                android:width="@dimen/line_width"
+                android:color="@color/stroke_material_dark" />
+
+            <corners android:radius="@dimen/corner_radius" />
+
+            <gradient android:startColor="@color/btn_default_disabled_focused_material_dark" android:endColor="@color/btn_default_disabled_focused_material_dark"/>
+
+        </shape>
+    </item>
+</layer-list>

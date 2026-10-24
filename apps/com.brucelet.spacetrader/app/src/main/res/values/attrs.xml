@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="actionBarTitleTextStyle" format="reference" />
+    <attr name="actionModeSpinnerTextStyle" format="reference" />
+    <attr name="actionBarBackgroundDocked" format="reference|color" />
+    <attr name="actionBarBackgroundDefault" format="reference|color" />
+    <attr name="roundedButtonDrawable" format="reference" />
+    <attr name="squareButtonDrawable" format="reference" />
+    <attr name="strokeColor" format="color" />
+    <attr name="startArrow" format="reference" />
+    <attr name="endArrow" format="reference" />
+    <attr name="infoIconDialog" format="reference" />
+    <attr name="infoIconEncounter" format="reference" />
+    <attr name="actionBarTitleBackground" format="reference" />
+    <attr name="textViewStyleHeader" format="reference" />
+    <attr name="buttonStyleRounded" format="reference" />
+    <attr name="buttonStyleSquare" format="reference" />
+	<attr name="pressableTextColor" format="color" />
+	<attr name="actionButtonMarginTop" format="dimension" />
+	<attr name="actionButtonMarginBottom" format="dimension" />
+	<attr name="statusBarPadding" format="dimension" />
+    <attr name="avgPriceListBackground" format="reference" />
+    <attr name="footerButtonStyle" format="reference" />
+    <attr name="listDividerColor" format="color" />
+
+    <attr name="dialogLayout" format="reference" />
+    <attr name="dialogTitleTextStyle" format="reference" />
+	<attr name="dialogDividerColor" format="color|reference" />
+	<attr name="dialogBackgroundStyle" format="reference" />
+	<attr name="dialogButtonBarStyle" format="reference" />
+	<attr name="dialogButtonStyle" format="reference" />
+	<attr name="dialogDivider" format="reference" />
+    
+	<declare-styleable name="dialog">
+	    <attr name="top" format="reference" />
+	    <attr name="middle" format="reference" />
+	    <attr name="bottom" format="reference" />
+	</declare-styleable>
+</resources>

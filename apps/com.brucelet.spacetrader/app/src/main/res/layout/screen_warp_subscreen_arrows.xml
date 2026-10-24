@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScreenRow"
+    android:gravity="end"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/screen_warp_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/screen_warp_next"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="16dp"
+        android:paddingStart="0dp"
+        android:paddingTop="8dp"
+        android:src="?attr/endArrow" />
+
+    <ImageButton
+        android:id="@+id/screen_warp_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/screen_warp_next"
+        android:layout_toStartOf="@id/screen_warp_next"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/screen_warp_prev"
+        android:paddingBottom="8dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="0dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:src="?attr/startArrow" />
+
+</merge>

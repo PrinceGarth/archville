@@ -1,0 +1,127 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto" >
+
+    <group android:id="@+id/menu_group_game" >
+        <item
+            android:id="@+id/menu_new"
+            android:icon="@null"
+            android:title="@string/menu_new"
+            support:showAsAction="never"/>
+        <item
+            android:id="@+id/menu_switch"
+            android:icon="@null"
+            android:title="@string/menu_switch"
+            support:showAsAction="never"/>
+        <item
+            android:id="@+id/menu_retire"
+            android:icon="@null"
+            android:title="@string/menu_retire"
+            support:showAsAction="never"/>
+    </group>
+    <group android:id="@+id/menu_group_settings" >
+        <item
+            android:id="@+id/menu_options"
+            android:alphabeticShortcut="@string/shortcut_options"
+            android:icon="@null"
+            android:title="@string/menu_options"
+            support:showAsAction="never"/>
+        <item
+            android:id="@+id/menu_shortcuts"
+            android:icon="@null"
+            android:title="@string/menu_shortcuts"
+            support:showAsAction="never"/>
+    </group>
+    <group android:id="@+id/menu_group_scores" >
+        <item
+            android:id="@+id/menu_scores"
+            android:icon="@null"
+            android:title="@string/menu_scores"
+            support:showAsAction="never"/>
+        <item
+            android:id="@+id/menu_clearscores"
+            android:icon="@null"
+            android:title="@string/menu_clearscores"
+            support:showAsAction="never"/>
+    </group>
+    <group android:id="@+id/menu_group_help" >
+        <item
+            android:id="@+id/menu_help"
+            android:alphabeticShortcut="@string/shortcut_help"
+            android:icon="@null"
+            android:title="@string/menu_help"
+            support:showAsAction="never">
+            <menu>
+                <item
+                    android:id="@+id/menu_help_current"
+                    android:icon="@null"
+                    android:title="@string/menu_help_current"
+                    support:showAsAction="never"/>
+                <item
+                    android:id="@+id/menu_help_helponmenu"
+                    android:icon="@null"
+                    android:title="@string/menu_help_helponmenu"
+                    support:showAsAction="never"/>
+                <item
+                    android:id="@+id/menu_help_howtoplay"
+                    android:icon="@null"
+                    android:title="@string/menu_help_howtoplay"
+                    support:showAsAction="never"/>
+                <item
+                    android:id="@+id/menu_help_trading"
+                    android:icon="@null"
+                    android:title="@string/menu_help_trading"
+                    support:showAsAction="never"/>
+                <item
+                    android:id="@+id/menu_help_traveling"
+                    android:icon="@null"
+                    android:title="@string/menu_help_traveling"
+                    support:showAsAction="never"/>
+                <item
+                    android:id="@+id/menu_help_shipequipment"
+                    android:icon="@null"
+                    android:title="@string/menu_help_shipequipment"
+                    support:showAsAction="never"/>
+                <item
+                    android:id="@+id/menu_help_skills"
+                    android:icon="@null"
+                    android:title="@string/menu_help_skills"
+                    support:showAsAction="never"/>
+                <item
+                    android:id="@+id/menu_help_firststeps"
+                    android:icon="@null"
+                    android:title="@string/menu_help_firststeps"
+                    support:showAsAction="never"/>
+                <item
+                    android:id="@+id/menu_help_acknowledgements"
+                    android:icon="@null"
+                    android:title="@string/menu_help_acknowledgements"
+                    support:showAsAction="never"/>
+                <item
+                    android:id="@+id/menu_help_about"
+                    android:icon="@null"
+                    android:title="@string/menu_help_about"
+                    support:showAsAction="never"/>
+                <item
+                    android:id="@+id/menu_help_documentation"
+                    android:icon="@null"
+                    android:title="@string/menu_help_documentation"
+                    support:showAsAction="never"/>
+            </menu>
+        </item>
+    </group>
+
+    <item
+        android:id="@+id/menu_savegame"
+        android:icon="@null"
+        android:title="@string/menu_savegame"
+        support:showAsAction="never"/>
+
+    <group android:id="@+id/menu_group_extra" >
+        <item
+            android:id="@+id/menu_keyboard"
+            android:icon="@null"
+            android:title="@string/menu_keyboard"
+            support:showAsAction="never"/>
+    </group>
+
+</menu>

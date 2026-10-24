@@ -1,0 +1,213 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Button
+        android:id="@+id/screen_encounter_tribble0"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble1"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble2"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble3"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble4"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble5"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble6"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble7"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble8"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble9"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble10"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble11"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble12"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble13"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble14"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble15"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble16"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble17"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble18"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble19"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble20"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble21"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble22"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble23"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble24"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble25"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble26"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble27"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble28"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_encounter_tribble29"
+        style="?attr/buttonStyleRounded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/encounterbutton_tribble"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</merge>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/dialog_about"
+        style="@style/RootLayout"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingBottom="8dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingTop="8dip" >
+
+        <TextView
+            android:id="@+id/dialog_about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawableStart="@mipmap/ic_launcher"
+            android:gravity="center_vertical|start"
+            android:text="@string/dialog_about_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_about_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="@string/dialog_about_author" />
+
+        <TextView
+            android:id="@+id/dialog_about_author2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="@string/dialog_about_author2" />
+
+        <TextView
+            android:id="@+id/dialog_about_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="@string/dialog_about_images" />
+
+        <TextView
+            android:id="@+id/dialog_about_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="@string/dialog_about_license" />
+
+        <TextView
+            android:id="@+id/dialog_about_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:singleLine="false"
+            android:text="@string/dialog_about_url" />
+
+        <TextView
+            android:id="@+id/dialog_about_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="@string/dialog_about_store" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto" >
+
+    <group android:id="@+id/menu_group_game" >
+        <item
+            android:id="@+id/menu_new"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_new"/>
+        <item
+            android:id="@+id/menu_switch"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_switch"/>
+        <item
+            android:id="@+id/menu_retire"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_retire"/>
+    </group>
+
+    <group android:id="@+id/menu_group_settings" >
+        <item
+            android:id="@+id/menu_options"
+            android:alphabeticShortcut="@string/shortcut_options"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_options"/>
+        <item
+            android:id="@+id/menu_shortcuts"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_shortcuts"/>
+    </group>
+
+    <group android:id="@+id/menu_group_scores" >
+        <item
+            android:id="@+id/menu_scores"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_scores"/>
+        <item
+            android:id="@+id/menu_clearscores"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_clearscores"/>
+    </group>
+
+    <group android:id="@+id/menu_group_savegame">
+        <item
+            android:id="@+id/menu_savegame"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_savegame"/>
+    </group>
+
+    <group android:id="@+id/menu_group_extra" >
+        <item
+            android:id="@+id/menu_keyboard"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_keyboard"/>
+        <item
+            android:id="@+id/menu_crash"
+            android:icon="@null"
+            support:showAsAction="never"
+            android:title="@string/menu_crash"/>
+    </group>
+
+</menu>

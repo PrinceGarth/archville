@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="EditTextDark_ACWidgets" parent="android:Widget.EditText">
+	  <item name="android:background">@drawable/dark_acwidgets_edit_text_holo_dark</item>
+	  <item name="android:textColor">#ffffff</item>
+  </style>
+
+  <style name="AutoCompleteTextViewDark_ACWidgets" parent="android:Widget.AutoCompleteTextView">
+      <item name="android:dropDownSelector">@drawable/dark_acwidgets_list_selector_holo_dark</item>
+	  <item name="android:background">@drawable/dark_acwidgets_edit_text_holo_dark</item>
+	  <item name="android:textColor">#ffffff</item>
+  </style>
+
+  <style name="CheckBoxDark_ACWidgets" parent="android:Widget.CompoundButton.CheckBox">
+      <item name="android:button">@drawable/dark_acwidgets_btn_check_holo_dark</item>
+  </style>
+
+  <style name="RadioButtonDark_ACWidgets" parent="android:Widget.CompoundButton.RadioButton">
+      <item name="android:button">@drawable/dark_acwidgets_btn_radio_holo_dark</item>
+  </style>
+
+  <style name="ButtonDark_ACWidgets" parent="android:Widget.Button">
+	  <item name="android:background">@drawable/dark_acwidgets_btn_default_holo_dark</item>
+	  <item name="android:minHeight">48dip</item>
+	  <item name="android:minWidth">64dip</item>
+	  <item name="android:textColor">#ffffff</item>
+  </style>
+
+  <style name="ImageButtonDark_ACWidgets" parent="android:Widget.ImageButton">
+	  <item name="android:background">@drawable/dark_acwidgets_btn_default_holo_dark</item>
+  </style>
+
+  <style name="SpinnerDark_ACWidgets" parent="android:Widget.Spinner">
+      <item name="android:background">@drawable/dark_acwidgets_spinner_background_holo_dark</item>
+      <item name="android:dropDownSelector">@drawable/dark_acwidgets_list_selector_holo_dark</item>
+  </style>
+
+  <style name="SpinnerDropDownItemDark_ACWidgets" parent="android:Widget.DropDownItem.Spinner">
+      <item name="android:checkMark">@drawable/dark_acwidgets_btn_radio_holo_dark</item>
+  </style>
+  <style name="ProgressBarDark_ACWidgets" parent="android:Widget.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/dark_acwidgets_progress_horizontal_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/dark_acwidgets_progress_indeterminate_horizontal_holo_dark</item>
+      <item name="android:minHeight">16dip</item>
+      <item name="android:maxHeight">16dip</item>
+  </style>
+
+  <style name="ListViewDark_ACWidgets" parent="android:Widget.ListView">
+      <item name="android:listSelector">@drawable/dark_acwidgets_list_selector_holo_dark</item>
+  </style>
+
+  <style name="ListViewDark_ACWidgets.White" parent="android:Widget.ListView.White">
+      <item name="android:listSelector">@drawable/dark_acwidgets_list_selector_holo_dark</item>
+  </style>
+
+  <style name="SpinnerItemDark_ACWidgets" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+      <item name="android:textColor">#ffffff</item>
+  </style>
+
+</resources>

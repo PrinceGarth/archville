@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="EditText.Material" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        
+        <item name="android:textSelectHandleLeft">@drawable/green2_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/green2_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/green2_text_select_handle_middle</item>
+    </style>
+    
+    <style name="AutoCompleteTextView.Material.Light" parent="@style/Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        
+        <item name="android:textSelectHandleLeft">@drawable/green2_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/green2_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/green2_text_select_handle_middle</item>
+    </style>
+
+    <style name="AutoCompleteTextView.Material.Dark" parent="@style/Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        
+        <item name="android:textSelectHandleLeft">@drawable/green2_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/green2_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/green2_text_select_handle_middle</item>
+    </style>
+
+</resources>

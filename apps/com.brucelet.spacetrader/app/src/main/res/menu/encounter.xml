@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/encounter_help"
+        support:showAsAction="ifRoom"
+        support:actionProviderClass="com.brucelet.spacetrader.widget.EncounterHelpActionProvider"
+        android:title="@string/dialog_titlehelp" />
+
+</menu>

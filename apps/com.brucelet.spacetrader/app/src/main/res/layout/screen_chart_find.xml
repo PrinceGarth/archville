@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    android:paddingBottom="8dip"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip"
+    android:paddingTop="8dip" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="@string/screen_chart_find_query" />
+
+    <LinearLayout
+        style="@style/ScreenRow"
+        android:gravity="center"
+        android:weightSum="2" >
+
+        <AutoCompleteTextView
+            style="?android:autoCompleteTextViewStyle"
+            android:id="@+id/screen_chart_find_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:scrollHorizontally="true" />
+    </LinearLayout>
+    
+    <CheckBox style="?android:checkboxStyle"
+        android:id="@+id/screen_chart_find_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:checked="true"
+        android:text="@string/screen_chart_find_track" />
+
+</LinearLayout>

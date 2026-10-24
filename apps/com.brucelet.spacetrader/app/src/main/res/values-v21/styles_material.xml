@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActivityTheme.Base.Material.Light" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="infoIconEncounter">@drawable/info_white_ripple_dark</item>
+        <item name="infoIconDialog">@drawable/info_material_green2_ripple_light</item>
+
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="actionBarTitleBackground">?selectableItemBackgroundBorderless</item>
+        <item name="statusBarPadding">0dp</item>
+        <item name="android:dialogTheme">@style/DialogTheme.Material.Light</item>
+    </style>
+
+    <style name="ActivityTheme.Base.Material.Dark" parent="Theme.AppCompat">
+        <item name="infoIconEncounter">@drawable/info_white_ripple_dark</item>
+        <item name="infoIconDialog">@drawable/info_material_green2_ripple_dark</item>
+
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="actionBarTitleBackground">?selectableItemBackgroundBorderless</item>
+        <item name="statusBarPadding">0dp</item>
+        <item name="android:dialogTheme">@style/DialogTheme.Material.Dark</item>
+    </style>
+
+    <style name="DialogTheme.Base.Material.Light" parent="ActivityTheme.Material.Light">
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+    <style name="DialogTheme.Base.Material.Dark" parent="ActivityTheme.Material.Dark">
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+    
+    <style name="ActionModeCloseButtonStyle.Base.Material.Light" parent="ActionModeCloseButtonStyle.Base.Material">
+        <item name="android:background">@drawable/item_background_borderless_material_light</item>
+    </style>
+    
+    <style name="EditText.Material" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+
+        <item name="android:textCursorDrawable">@drawable/text_cursor_material_green2</item>
+    </style>
+    
+    <style name="AutoCompleteTextView.Material.Light" parent="@style/Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+
+        <item name="android:textCursorDrawable">@drawable/text_cursor_material_green2</item>
+    </style>
+
+    <style name="AutoCompleteTextView.Material.Dark" parent="@style/Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+
+        <item name="android:textCursorDrawable">@drawable/text_cursor_material_green2</item>
+    </style>
+</resources>

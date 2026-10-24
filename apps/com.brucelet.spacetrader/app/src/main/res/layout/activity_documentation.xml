@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    android:orientation="vertical"
+    tools:context=".DocumentationActivity" >
+
+    <include layout="@layout/ab_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/foreground_shadow"
+        android:gravity="top" >
+
+        <WebView
+            android:id="@+id/documentation_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/doc_background"/>
+    </FrameLayout>
+
+</LinearLayout>

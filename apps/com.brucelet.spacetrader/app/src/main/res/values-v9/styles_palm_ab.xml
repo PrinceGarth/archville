@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <style name="Theme.Palm_ab" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">@drawable/selectable_background_palm_ab</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Palm_ab</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Palm_ab</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Palm_ab</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Palm_ab</item>
+        <item name="actionBarStyle">@style/ActionBar.Transparent.Palm_ab</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_palm_ab</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_palm_ab</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Palm_ab</item>
+
+        <!-- Widgets from palm_acwidgets -->
+        <item name="android:editTextStyle">@style/EditTextPalm_ACWidgets</item>
+        <item name="android:textColorHighlight">#99330099</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewPalm_ACWidgets</item>
+        <item name="android:checkboxStyle">@style/CheckBoxPalm_ACWidgets</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonPalm_ACWidgets</item>
+        <item name="android:buttonStyle">@style/ButtonPalm_ACWidgets</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonPalm_ACWidgets</item>
+        <item name="android:spinnerStyle">@style/SpinnerPalm_ACWidgets</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemPalm_ACWidgets</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarPalm_ACWidgets</item>
+        <item name="android:listViewStyle">@style/ListViewPalm_ACWidgets</item>
+        <item name="android:listViewWhiteStyle">@style/ListViewPalm_ACWidgets.White</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemPalm_ACWidgets</item>
+
+        <!-- API9 additions -->
+        <item name="android:textSelectHandleLeft">@drawable/palm_acwidgets_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/palm_acwidgets_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/palm_acwidgets_text_select_handle_middle</item>
+    </style>
+
+</resources>

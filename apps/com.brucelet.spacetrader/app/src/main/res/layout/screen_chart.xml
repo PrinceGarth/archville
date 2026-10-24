@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RootLayout"
+    tools:context=".ChartScreen" >
+
+    <view
+        android:id="@+id/screen_chart_chartview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.brucelet.spacetrader.ChartScreen$ChartView"
+        android:foreground="@drawable/foreground_shadow_bottom"
+        android:layout_marginBottom="4dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <LinearLayout
+            android:baselineAligned="true"
+            android:baselineAlignedChildIndex="0"
+            android:id="@+id/screen_chart_systemrow"
+            style="@style/ScreenRow"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="14"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/screen_chart_systemname"
+                style="?android:attr/textViewStyle" android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/screen_chart_distance"
+                style="?android:attr/textViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ScreenRow"
+            android:layout_alignBaseline="@id/screen_chart_systemrow"
+            android:baselineAligned="true"
+            android:baselineAlignedChildIndex="0"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal"
+            android:paddingTop="5dp" >
+
+            <Button
+                android:id="@+id/screen_chart_jump"
+                style="?attr/buttonStyleRounded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:text="@string/screen_chart_jump" />
+
+            <Button
+                android:id="@+id/screen_chart_find"
+                style="?attr/buttonStyleRounded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_chart_find" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/screen_chart_description"
+            style="?android:attr/textViewStyle" android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:minLines="2"
+            android:singleLine="false"
+            android:layout_below="@id/screen_chart_systemrow" />
+    </RelativeLayout>
+
+</LinearLayout>

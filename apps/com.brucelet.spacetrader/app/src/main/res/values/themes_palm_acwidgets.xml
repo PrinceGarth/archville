@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="Palm_ACWidgets" parent="@style/_Palm_ACWidgets"/>
+
+  <style name="_Palm_ACWidgets" parent="Theme.AppCompat.Light">
+
+    <item name="android:editTextStyle">@style/EditTextPalm_ACWidgets</item>
+
+    <item name="android:textColorHighlight">#99330099</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewPalm_ACWidgets</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxPalm_ACWidgets</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonPalm_ACWidgets</item>
+
+    <item name="android:buttonStyle">@style/ButtonPalm_ACWidgets</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonPalm_ACWidgets</item>
+
+    <item name="android:spinnerStyle">@style/SpinnerPalm_ACWidgets</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemPalm_ACWidgets</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarPalm_ACWidgets</item>
+
+    <item name="android:listViewStyle">@style/ListViewPalm_ACWidgets</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewPalm_ACWidgets.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemPalm_ACWidgets</item>
+
+  </style>
+
+</resources>
