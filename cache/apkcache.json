@@ -41,5 +41,46 @@
     "apkName": "com.brucelet.spacetrader_23001.apk",
     "icon": "com.brucelet.spacetrader.23001.png",
     "added": 1792854905.0
+  },
+  "com.watabou.pixeldungeon_74001.apk": {
+    "hash": "ffaf37a53fbca92105c12e30cc8a20c8fbfb6a415e8df4242e3516a985b8a3d6",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.VIBRATE",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {
+      "240": "res/drawable-hdpi-v4/ic_launcher.png",
+      "160": "res/drawable-mdpi-v4/ic_launcher.png",
+      "320": "res/drawable-xhdpi-v4/ic_launcher.png",
+      "480": "res/drawable-xxhdpi-v4/ic_launcher.png",
+      "640": "res/drawable-xxxhdpi-v4/ic_launcher.png",
+      "-1": "res/drawable-mdpi-v4/ic_launcher.png"
+    },
+    "icons": {
+      "640": "com.watabou.pixeldungeon.74001.png",
+      "480": "com.watabou.pixeldungeon.74001.png",
+      "320": "com.watabou.pixeldungeon.74001.png",
+      "240": "com.watabou.pixeldungeon.74001.png",
+      "160": "com.watabou.pixeldungeon.74001.png",
+      "0": "com.watabou.pixeldungeon.74001.png"
+    },
+    "antiFeatures": {},
+    "packageName": "com.watabou.pixeldungeon",
+    "versionCode": 74001,
+    "name": "Pixel Dungeon",
+    "versionName": "1.9.1-archville1",
+    "minSdkVersion": 21,
+    "targetSdkVersion": 36,
+    "sig": "2467b1346f66d1b073dbf3a8a00c8e56",
+    "signer": "668d05d683aebe9443f28879a46ab8d1e0979965a0ebbca1ae34fa4cf6410538",
+    "size": 3647379,
+    "apkName": "com.watabou.pixeldungeon_74001.apk",
+    "icon": "com.watabou.pixeldungeon.74001.png",
+    "added": 1792866816.699103
   }
 }

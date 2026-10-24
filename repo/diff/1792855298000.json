@@ -1,12 +1,97 @@
 {
   "repo": {
-    "timestamp": 1792856115000
+    "timestamp": 1792866963000
   },
   "packages": {
     "com.brucelet.spacetrader": {
       "metadata": {
         "description": {
           "en-US": "Space Trader is a port of the Palm OS game of the same name, created by Pieter Spronck. A classic among Palm gamers of the era, it was named Freeware Game of the Year by Handheld Computing in 2000.\n\nThis Android port faithfully reproduces the original game. Your goal is to earn enough money, whether by honest trading or other, seedier means, to retire to your own moon. Buy goods on one planet to sell to another, but watch out for space pirates! If you're tough enough, hunt down pirates to earn rewards. If that seems too above-board, try smuggling illegal items for spectacular profits. Or, if you'd rather, become a pirate yourself and rob other traders of their goods. Be careful, though. The police take notice of illegal activity...\n\nAbout this build (F-Droid Archville): The last release (1.3.5) was archived by F-Droid and targets Android 6.0, so Android 15 and newer refuse to install it. This is the same game rebuilt from the archived source for current Android: targets Android 16, uses AndroidX, handles edge-to-edge display and the predictive back gesture. Gameplay is unchanged.\n\nSigned with the Archville key, not the original developer's key, so it cannot update an existing install of the old version: uninstall that first (saved games do not carry over).\n\nPhones older than Android 5.0 should keep using the original APK from the official F-Droid Archive repository."
+        }
+      }
+    },
+    "com.watabou.pixeldungeon": {
+      "metadata": {
+        "added": 1792866816000,
+        "categories": [
+          "Games"
+        ],
+        "issueTracker": "https://github.com/PrinceGarth/archville/issues",
+        "lastUpdated": 1792866816000,
+        "license": "GPL-3.0-only",
+        "sourceCode": "https://github.com/PrinceGarth/archville/tree/main/apps/com.watabou.pixeldungeon",
+        "webSite": "https://github.com/PrinceGarth/archville",
+        "screenshots": {
+          "phone": {
+            "en-US": [
+              {
+                "name": "/com.watabou.pixeldungeon/en-US/phoneScreenshots/1_title.png",
+                "sha256": "9f539c97b0db74c98afa641b0ac10091e96c2d74edd95656bca8efa85d8560b9",
+                "size": 140897
+              },
+              {
+                "name": "/com.watabou.pixeldungeon/en-US/phoneScreenshots/2_select_hero.png",
+                "sha256": "075968fe3fd02c4c664d5e03396f9cadd847fec0570ddea88b89c6dabe393c67",
+                "size": 25787
+              },
+              {
+                "name": "/com.watabou.pixeldungeon/en-US/phoneScreenshots/3_dungeon.png",
+                "sha256": "7721e35d17fb1395ce6d1fdf00307564d1807876ded24e8cd28055124f70fd08",
+                "size": 66932
+              },
+              {
+                "name": "/com.watabou.pixeldungeon/en-US/phoneScreenshots/4_combat.png",
+                "sha256": "81cda9a67f45efdc6f57821cf06a5507bf3f748ef5755d71a02687d99dd8fa29",
+                "size": 118188
+              }
+            ]
+          }
+        },
+        "authorName": "Oleg Dolya (watabou)",
+        "name": {
+          "en-US": "Pixel Dungeon"
+        },
+        "summary": {
+          "en-US": "Traditional roguelike with pixel-art graphics (the original)"
+        },
+        "description": {
+          "en-US": "Traditional roguelike game with pixel-art graphics and simple interface. Pick a hero (warrior, mage, rogue or huntress), descend through randomly generated dungeon levels, fight monsters, find loot and try to reach the Amulet of Yendor. This is the original game by watabou that Shattered Pixel Dungeon and many other forks grew from.\n\nAbout this build (F-Droid Archville): The last release (1.9.1) was archived by F-Droid and targets Android 4.4W, so Android 15 and newer refuse to install it. This is the same game rebuilt from the archived source for current Android: targets Android 16, keeps the game clear of the navigation bar and camera cutout, and makes the back gesture work inside the game again. Gameplay is unchanged.\n\nSigned with the Archville key, not the original developer's key, so it cannot update an existing install of the old version: uninstall that first (saved games do not carry over).\n\nPhones older than Android 5.0 should keep using the original APK from the official F-Droid Archive repository."
+        },
+        "icon": {
+          "en-US": {
+            "name": "/icons/com.watabou.pixeldungeon.74001.png",
+            "sha256": "ea9d19d0a458fedeeffc00dd09c8e58ef50c6bfa286a15a78d9bd34b3116a887",
+            "size": 1740
+          }
+        },
+        "preferredSigner": "668d05d683aebe9443f28879a46ab8d1e0979965a0ebbca1ae34fa4cf6410538"
+      },
+      "versions": {
+        "ffaf37a53fbca92105c12e30cc8a20c8fbfb6a415e8df4242e3516a985b8a3d6": {
+          "added": 1792866816000,
+          "file": {
+            "name": "/com.watabou.pixeldungeon_74001.apk",
+            "sha256": "ffaf37a53fbca92105c12e30cc8a20c8fbfb6a415e8df4242e3516a985b8a3d6",
+            "size": 3647379
+          },
+          "manifest": {
+            "versionName": "1.9.1-archville1",
+            "versionCode": 74001,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "668d05d683aebe9443f28879a46ab8d1e0979965a0ebbca1ae34fa4cf6410538"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.VIBRATE"
+              }
+            ]
+          }
         }
       }
     }

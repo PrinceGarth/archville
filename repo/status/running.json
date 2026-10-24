@@ -8,31 +8,34 @@
     "--pretty"
   ],
   "disabled": [],
-  "endTimestamp": 1792856127168,
+  "endTimestamp": 1792867038723,
   "failedBuilds": {},
   "jarsigner": "/usr/lib/jvm/java-25-openjdk-amd64/bin/jarsigner",
   "keytool": "/usr/lib/jvm/java-25-openjdk-amd64/bin/keytool",
   "needsUpdate": [
-    "com.brucelet.spacetrader"
+    "com.brucelet.spacetrader",
+    "com.watabou.pixeldungeon"
   ],
   "noPackages": [
-    "com.brucelet.spacetrader"
+    "com.brucelet.spacetrader",
+    "com.watabou.pixeldungeon"
   ],
   "noUpdateCheck": [
-    "com.brucelet.spacetrader"
+    "com.brucelet.spacetrader",
+    "com.watabou.pixeldungeon"
   ],
   "stages": {
-    "archive_old_apks archive": 1792856091768,
-    "delete_disabled_builds": 1792856091764,
-    "index.make archive": 1792856091771,
-    "index.make repo": 1792856115107,
-    "prepare_apps archive": 1792856091770,
-    "prepare_apps repo": 1792856111433,
-    "process_apks": 1792856091765,
-    "read_added_date_from_all_apks": 1792856091768,
-    "remove_apks": 1792856091767,
-    "scan_repo_files": 1792856091766
+    "archive_old_apks archive": 1792866816770,
+    "delete_disabled_builds": 1792866784413,
+    "index.make archive": 1792866816839,
+    "index.make repo": 1792866963539,
+    "prepare_apps archive": 1792866816802,
+    "prepare_apps repo": 1792866923153,
+    "process_apks": 1792866784420,
+    "read_added_date_from_all_apks": 1792866816766,
+    "remove_apks": 1792866816742,
+    "scan_repo_files": 1792866816699
   },
-  "startTimestamp": 1792874091000,
+  "startTimestamp": 1792884782000,
   "subcommand": "update"
 }
