@@ -77,6 +77,20 @@ GitHub Pages.
 4. Use `versionCode = <original versionCode> * 1000 + <Archville revision>`.
 5. Add `fdroid/metadata/<applicationId>.yml`, then run `scripts/publish.sh`.
 
+## Publishing (maintainer)
+
+Signing keys live only in `secrets/` on the maintainer's machine (gitignored):
+`archville-apps.p12` (app key), `archville-repo.p12` (repo index key) and
+`passwords.env`. Keep an offline backup. Losing the repo key forces every user
+to re-add the repo under a new fingerprint. Losing the app key means installed
+apps can never be updated.
+
+```sh
+pipx install fdroidserver==2.4.5
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64 ANDROID_HOME=~/Android
+scripts/publish.sh            # builds new versions, re-indexes, pushes gh-pages
+```
+
 ## Licenses
 
 Each app keeps its upstream license; see the `LICENSE` file in its
