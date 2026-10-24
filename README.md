@@ -40,8 +40,9 @@ Gameplay is untouched. The build and platform glue were brought forward:
 - Removed a private fork of AppCompat's `ListPopupWindow` that relied on
   internals AndroidX made private
 
-Tested on a Pixel 8 Pro running Android 17. The full diff against the archived
-source is the second commit in this repo's history.
+Tested on a Pixel 8 Pro running Android 17. The first commit touching
+`apps/com.brucelet.spacetrader` is the archived source unmodified; every later
+commit there is an Archville change.
 
 ## Compatibility policy
 
