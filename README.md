@@ -93,6 +93,7 @@ scripts/publish.sh            # builds new versions, re-indexes, pushes gh-pages
 
 ## Licenses
 
-Each app keeps its upstream license; see the `LICENSE` file in its
+The repo's own tooling and docs (`scripts/`, `fdroid/`, `.github/`, this
+README) are [MIT](LICENSE). Each app keeps its upstream license; see the `LICENSE` file in its
 directory. Space Trader is GPL-3.0-or-later (© 2014–2016 Russell Wolf, based on
 code by Pieter Spronck).
