@@ -14,7 +14,7 @@
       }
     },
     "address": "https://princegarth.github.io/archville/repo",
-    "timestamp": 1792855718000,
+    "timestamp": 1792856115000,
     "categories": {
       "Games": {
         "name": {
@@ -69,7 +69,7 @@
           "en-US": "Trade, fight and smuggle your way across the galaxy (Palm OS classic)"
         },
         "description": {
-          "en-US": "Space Trader is a port of the Palm OS game of the same name, created by Pieter\nSpronck. A classic among Palm gamers of the era, it was named Freeware Game of\nthe Year by Handheld Computing in 2000.\n\nThis Android port faithfully reproduces the original game. Your goal\nis to earn enough money, whether by honest trading or other, seedier means, to\nretire to your own moon. Buy goods on one planet to sell to another, but watch\nout for space pirates! If you're tough enough, hunt down pirates to earn rewards.\nIf that seems too above-board, try smuggling illegal items for spectacular profits.\nOr, if you'd rather, become a pirate yourself and rob other traders of their goods.\nBe careful, though. The police take notice of illegal activity...\n\n'''About this build (F-Droid Archville)'''\n\nThe last release (1.3.5) was archived by F-Droid and targets Android 6.0, so\nAndroid 15 and newer refuse to install it. This is the same game rebuilt\nfrom the archived source for current Android: targets Android 16, uses\nAndroidX, handles edge-to-edge display and the predictive back gesture.\nGameplay is unchanged.\n\nSigned with the Archville key, not the original developer's key, so it\ncannot update an existing install of the old version: uninstall that first\n(saved games do not carry over).\n\nPhones older than Android 5.0 should keep using the original APK from the\nofficial F-Droid Archive repository."
+          "en-US": "Space Trader is a port of the Palm OS game of the same name, created by Pieter Spronck. A classic among Palm gamers of the era, it was named Freeware Game of the Year by Handheld Computing in 2000.\n\nThis Android port faithfully reproduces the original game. Your goal is to earn enough money, whether by honest trading or other, seedier means, to retire to your own moon. Buy goods on one planet to sell to another, but watch out for space pirates! If you're tough enough, hunt down pirates to earn rewards. If that seems too above-board, try smuggling illegal items for spectacular profits. Or, if you'd rather, become a pirate yourself and rob other traders of their goods. Be careful, though. The police take notice of illegal activity...\n\nAbout this build (F-Droid Archville): The last release (1.3.5) was archived by F-Droid and targets Android 6.0, so Android 15 and newer refuse to install it. This is the same game rebuilt from the archived source for current Android: targets Android 16, uses AndroidX, handles edge-to-edge display and the predictive back gesture. Gameplay is unchanged.\n\nSigned with the Archville key, not the original developer's key, so it cannot update an existing install of the old version: uninstall that first (saved games do not carry over).\n\nPhones older than Android 5.0 should keep using the original APK from the official F-Droid Archive repository."
         },
         "icon": {
           "en-US": {
