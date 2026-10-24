@@ -1,0 +1,113 @@
+{
+  "repo": {
+    "name": {
+      "en-US": "F-Droid Archville"
+    },
+    "description": {
+      "en-US": "Apps from the official F-Droid Archive that no longer install or run on current Android, rebuilt from their original source for modern phones. Source and build changes: https://github.com/PrinceGarth/archville"
+    },
+    "icon": {
+      "en-US": {
+        "name": "/icons/icon.png",
+        "sha256": "3ce335753862ecafd72878e9a01757c3776a9a0bec79d1d0c911378bf93b437c",
+        "size": 30535
+      }
+    },
+    "address": "https://princegarth.github.io/archville/repo",
+    "timestamp": 1792855718000,
+    "categories": {
+      "Games": {
+        "name": {
+          "en-US": "Games"
+        }
+      }
+    }
+  },
+  "packages": {
+    "com.brucelet.spacetrader": {
+      "metadata": {
+        "added": 1792854905000,
+        "categories": [
+          "Games"
+        ],
+        "issueTracker": "https://github.com/PrinceGarth/archville/issues",
+        "lastUpdated": 1792854905000,
+        "license": "GPL-3.0-or-later",
+        "sourceCode": "https://github.com/PrinceGarth/archville/tree/main/apps/com.brucelet.spacetrader",
+        "webSite": "https://github.com/PrinceGarth/archville",
+        "screenshots": {
+          "phone": {
+            "en-US": [
+              {
+                "name": "/com.brucelet.spacetrader/en-US/phoneScreenshots/1_title.png",
+                "sha256": "53df77f9810ec8298253b274f9d334e67a74e869da9c4fb3ab739de362a2855f",
+                "size": 2552665
+              },
+              {
+                "name": "/com.brucelet.spacetrader/en-US/phoneScreenshots/2_system_info.png",
+                "sha256": "c91262751f5f4349508a18bd73b4dac64dde0508993e0a889e030d2c3143bc9d",
+                "size": 90830
+              },
+              {
+                "name": "/com.brucelet.spacetrader/en-US/phoneScreenshots/3_galactic_chart.png",
+                "sha256": "7083616afe1a906cc68744baa5708dac08cae95cb86ccfd12251773b28935d20",
+                "size": 79245
+              },
+              {
+                "name": "/com.brucelet.spacetrader/en-US/phoneScreenshots/4_encounter.png",
+                "sha256": "f3693e1a4923f5acba5e996b516013b87185de124ff3daac2325dd8982ae656e",
+                "size": 65327
+              }
+            ]
+          }
+        },
+        "authorName": "Russell Wolf (Android port), Pieter Spronck (original game)",
+        "name": {
+          "en-US": "Space Trader"
+        },
+        "summary": {
+          "en-US": "Trade, fight and smuggle your way across the galaxy (Palm OS classic)"
+        },
+        "description": {
+          "en-US": "Space Trader is a port of the Palm OS game of the same name, created by Pieter\nSpronck. A classic among Palm gamers of the era, it was named Freeware Game of\nthe Year by Handheld Computing in 2000.\n\nThis Android port faithfully reproduces the original game. Your goal\nis to earn enough money, whether by honest trading or other, seedier means, to\nretire to your own moon. Buy goods on one planet to sell to another, but watch\nout for space pirates! If you're tough enough, hunt down pirates to earn rewards.\nIf that seems too above-board, try smuggling illegal items for spectacular profits.\nOr, if you'd rather, become a pirate yourself and rob other traders of their goods.\nBe careful, though. The police take notice of illegal activity...\n\n'''About this build (F-Droid Archville)'''\n\nThe last release (1.3.5) was archived by F-Droid and targets Android 6.0, so\nAndroid 15 and newer refuse to install it. This is the same game rebuilt\nfrom the archived source for current Android: targets Android 16, uses\nAndroidX, handles edge-to-edge display and the predictive back gesture.\nGameplay is unchanged.\n\nSigned with the Archville key, not the original developer's key, so it\ncannot update an existing install of the old version: uninstall that first\n(saved games do not carry over).\n\nPhones older than Android 5.0 should keep using the original APK from the\nofficial F-Droid Archive repository."
+        },
+        "icon": {
+          "en-US": {
+            "name": "/icons/com.brucelet.spacetrader.23001.png",
+            "sha256": "2596663c9f5756e85b663fa544aed8577c9dfe51ca7ad3db5708aa91a3e781e8",
+            "size": 1094
+          }
+        },
+        "preferredSigner": "668d05d683aebe9443f28879a46ab8d1e0979965a0ebbca1ae34fa4cf6410538"
+      },
+      "versions": {
+        "d8406d1504c6807d453f4308b68fa87fd73c8d2ba495ca848464ddd67fb47021": {
+          "added": 1792854905000,
+          "file": {
+            "name": "/com.brucelet.spacetrader_23001.apk",
+            "sha256": "d8406d1504c6807d453f4308b68fa87fd73c8d2ba495ca848464ddd67fb47021",
+            "size": 17817076
+          },
+          "manifest": {
+            "versionName": "1.3.5-archville1",
+            "versionCode": 23001,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "668d05d683aebe9443f28879a46ab8d1e0979965a0ebbca1ae34fa4cf6410538"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "com.brucelet.spacetrader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

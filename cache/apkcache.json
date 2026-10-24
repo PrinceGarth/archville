@@ -1,0 +1,45 @@
+{
+  "METADATA_VERSION": 20002,
+  "allow_disabled_algorithms": false,
+  "com.brucelet.spacetrader_23001.apk": {
+    "hash": "d8406d1504c6807d453f4308b68fa87fd73c8d2ba495ca848464ddd67fb47021",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "com.brucelet.spacetrader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {
+      "240": "res/mipmap-hdpi-v4/ic_launcher.png",
+      "160": "res/mipmap-mdpi-v4/ic_launcher.png",
+      "320": "res/mipmap-xhdpi-v4/ic_launcher.png",
+      "480": "res/mipmap-xxhdpi-v4/ic_launcher.png",
+      "640": "res/mipmap-xxxhdpi-v4/ic_launcher.png",
+      "-1": "res/mipmap-mdpi-v4/ic_launcher.png"
+    },
+    "icons": {
+      "640": "com.brucelet.spacetrader.23001.png",
+      "480": "com.brucelet.spacetrader.23001.png",
+      "320": "com.brucelet.spacetrader.23001.png",
+      "240": "com.brucelet.spacetrader.23001.png",
+      "160": "com.brucelet.spacetrader.23001.png",
+      "0": "com.brucelet.spacetrader.23001.png"
+    },
+    "antiFeatures": {},
+    "packageName": "com.brucelet.spacetrader",
+    "versionCode": 23001,
+    "name": "Space Trader",
+    "versionName": "1.3.5-archville1",
+    "minSdkVersion": 21,
+    "targetSdkVersion": 36,
+    "sig": "2467b1346f66d1b073dbf3a8a00c8e56",
+    "signer": "668d05d683aebe9443f28879a46ab8d1e0979965a0ebbca1ae34fa4cf6410538",
+    "size": 17817076,
+    "apkName": "com.brucelet.spacetrader_23001.apk",
+    "icon": "com.brucelet.spacetrader.23001.png",
+    "added": 1792854905.0
+  }
+}

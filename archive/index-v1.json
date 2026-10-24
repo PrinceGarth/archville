@@ -1,0 +1,16 @@
+{
+  "repo": {
+    "timestamp": 1792855670000,
+    "version": 20002,
+    "name": "F-Droid Archville (archive)",
+    "icon": "icon.png",
+    "description": "Older Archville builds. You probably want the main F-Droid Archville repo.",
+    "address": "https://princegarth.github.io/archville/archive"
+  },
+  "requests": {
+    "install": [],
+    "uninstall": []
+  },
+  "apps": [],
+  "packages": {}
+}
