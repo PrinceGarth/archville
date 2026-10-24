@@ -1,0 +1,27 @@
+---
+# fdroidserver config for the F-Droid Archville repo.
+# No secrets in here: passwords come from the environment, and keystore.p12 is
+# written next to this file at publish time (it is gitignored).
+
+repo_url: https://princegarth.github.io/archville/repo
+repo_name: F-Droid Archville
+repo_icon: icon.png
+repo_description: >-
+  Apps from the official F-Droid Archive that no longer install or run on
+  current Android, rebuilt from their original source for modern phones.
+  Source and build changes: https://github.com/PrinceGarth/archville
+
+archive_older: 3
+archive_url: https://princegarth.github.io/archville/archive
+archive_name: F-Droid Archville (archive)
+archive_icon: icon.png
+archive_description: >-
+  Older Archville builds. You probably want the main F-Droid Archville repo.
+
+repo_keyalias: archville-repo
+keystore: keystore.p12
+keystorepass: {env: REPO_KEYSTORE_PASS}
+keypass: {env: REPO_KEYSTORE_PASS}
+keydname: CN=F-Droid Archville repo, O=F-Droid Archville
+
+make_current_version_link: false

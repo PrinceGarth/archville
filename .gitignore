@@ -3,17 +3,18 @@
 !/.gitignore
 !/.github/
 
-# Signing material and fdroid config (contains keystore passwords)
+# Signing keys and passwords: back these up, never commit them
 /secrets/
-/fdroid/config.yml
 /fdroid/keystore.p12
+
+# Generated F-Droid repo (published on the gh-pages branch via pages/ worktree)
 /fdroid/tmp/
 /fdroid/archive/
 /fdroid/repo/
+/pages/
 
 # Build outputs
 build/
 .gradle/
 local.properties
 *.apk
-/venv/
