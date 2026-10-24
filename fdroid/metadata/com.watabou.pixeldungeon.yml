@@ -1,0 +1,24 @@
+AuthorName: Oleg Dolya (watabou)
+Categories:
+  - Games
+License: GPL-3.0-only
+WebSite: https://github.com/PrinceGarth/archville
+SourceCode: https://github.com/PrinceGarth/archville/tree/main/apps/com.watabou.pixeldungeon
+IssueTracker: https://github.com/PrinceGarth/archville/issues
+
+Name: Pixel Dungeon
+Summary: Traditional roguelike with pixel-art graphics (the original)
+Description: |-
+  Traditional roguelike game with pixel-art graphics and simple interface. Pick a hero (warrior, mage, rogue or huntress), descend through randomly generated dungeon levels, fight monsters, find loot and try to reach the Amulet of Yendor. This is the original game by watabou that Shattered Pixel Dungeon and many other forks grew from.
+
+  About this build (F-Droid Archville): The last release (1.9.1) was archived by F-Droid and targets Android 4.4W, so Android 15 and newer refuse to install it. This is the same game rebuilt from the archived source for current Android: targets Android 16, keeps the game clear of the navigation bar and camera cutout, and makes the back gesture work inside the game again. Gameplay is unchanged.
+
+  Signed with the Archville key, not the original developer's key, so it cannot update an existing install of the old version: uninstall that first (saved games do not carry over).
+
+  Phones older than Android 5.0 should keep using the original APK from the official F-Droid Archive repository.
+
+RepoType: git
+Repo: https://github.com/PrinceGarth/archville.git
+
+AutoUpdateMode: None
+UpdateCheckMode: None

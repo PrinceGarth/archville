@@ -26,6 +26,7 @@ Repo signing key fingerprint (SHA-256):
 | App | Archived version | Archville version | Why it broke | Source |
 |---|---|---|---|---|
 | **Space Trader** (`com.brucelet.spacetrader`) | 1.3.5 (targetSdk 23) | 1.3.5-archville1 (targetSdk 36) | Android 15+ refuses to install apps targeting below API 24 (`INSTALL_FAILED_DEPRECATED_SDK_VERSION`) | [apps/com.brucelet.spacetrader](apps/com.brucelet.spacetrader) |
+| **Pixel Dungeon** (`com.watabou.pixeldungeon`) | 1.9.1 (targetSdk 20) | 1.9.1-archville1 (targetSdk 36) | Same install block | [apps/com.watabou.pixeldungeon](apps/com.watabou.pixeldungeon) |
 
 ### Space Trader: what changed
 
@@ -43,6 +44,19 @@ Gameplay is untouched. The build and platform glue were brought forward:
 Tested on a Pixel 8 Pro running Android 17. The first commit touching
 `apps/com.brucelet.spacetrader` is the archived source unmodified; every later
 commit there is an Archville change.
+
+### Pixel Dungeon: what changed
+
+Gameplay is untouched:
+
+- Ant → Gradle 9.8 / AGP 9.4, compile + target SDK 36, minSdk 21
+- `android.util.FloatMath` (removed in API 23) → `Math`
+- The game sits inside the navigation bar and camera cutout; with Android
+  15's forced edge-to-edge the bottom toolbar was hidden behind the nav bar
+- The back gesture reaches the game again (as a BACK key press), so it closes
+  windows and steps back through scenes instead of quitting
+
+Tested on a Pixel 8 Pro running Android 17.
 
 ## Compatibility policy
 
