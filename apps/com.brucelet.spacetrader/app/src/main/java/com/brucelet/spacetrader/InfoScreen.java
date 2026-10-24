@@ -28,7 +28,7 @@ import android.view.ViewGroup;
 import com.brucelet.spacetrader.enumtypes.ScreenType;
 
 /**
- * A simple {@link android.support.v4.app.Fragment} subclass. 
+ * A simple {@link androidx.fragment.app.Fragment} subclass. 
  * Use the {@link InfoScreen#newInstance} factory method
  * to create an instance of this fragment.
  * 

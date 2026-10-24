@@ -22,7 +22,7 @@ package com.brucelet.spacetrader;
 
 
 
-import android.support.v4.view.PagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;

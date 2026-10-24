@@ -9,7 +9,7 @@
     android:gravity="center_vertical"
     android:orientation="horizontal" >
 
-    <android.support.v4.widget.Space
+    <Space
         android:layout_width="16dp"
         android:layout_height="wrap_content" />
 
@@ -35,7 +35,7 @@
         android:maxLines="1"
         android:textAppearance="?attr/actionBarTitleTextStyle" />
 
-    <android.support.v4.widget.Space
+    <Space
         android:layout_width="16dp"
         android:layout_height="wrap_content" />
 

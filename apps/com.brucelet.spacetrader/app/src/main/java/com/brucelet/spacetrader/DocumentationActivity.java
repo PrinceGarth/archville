@@ -22,11 +22,12 @@ package com.brucelet.spacetrader;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.content.res.ResourcesCompat;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.activity.OnBackPressedCallback;
+import androidx.annotation.NonNull;
+import androidx.core.content.res.ResourcesCompat;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.View;
 import android.webkit.WebView;
@@ -42,6 +43,8 @@ public class DocumentationActivity extends AppCompatActivity implements View.OnC
 		super.onCreate(savedInstanceState);
 		
 		setContentView(R.layout.activity_documentation);
+		SystemBarInsets.apply(this);
+		getOnBackPressedDispatcher().addCallback(this, mBackCallback);
 		
 		Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
 		setSupportActionBar(tb);
@@ -83,15 +86,19 @@ public class DocumentationActivity extends AppCompatActivity implements View.OnC
 		return (WebView) findViewById(R.id.documentation_webview);
 	}
 	
-	@Override
-	public void onBackPressed() {
-		WebView webView = getWebView();
-		if (webView.canGoBack()) {
-			webView.goBack();
-		} else {
-			super.onBackPressed();
+	// Predictive back never calls onBackPressed(), so step back through the WebView here.
+	private final OnBackPressedCallback mBackCallback = new OnBackPressedCallback(true) {
+		@Override
+		public void handleOnBackPressed() {
+			WebView webView = getWebView();
+			if (webView.canGoBack()) {
+				webView.goBack();
+			} else {
+				setEnabled(false);
+				getOnBackPressedDispatcher().onBackPressed();
+			}
 		}
-	}
+	};
 
 	@Override
 	public void onClick(View v) {

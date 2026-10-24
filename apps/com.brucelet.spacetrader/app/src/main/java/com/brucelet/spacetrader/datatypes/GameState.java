@@ -42,8 +42,8 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Build.VERSION;
 import android.os.Handler;
-import android.support.v4.content.res.ResourcesCompat;
-import android.support.v4.view.ViewPager;
+import androidx.core.content.res.ResourcesCompat;
+import androidx.viewpager.widget.ViewPager;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
@@ -1067,20 +1067,15 @@ public class GameState {
 		identifyStartup = ((CheckBox) dialog.getDialog().findViewById(R.id.dialog_options_identify)).isChecked();
 		
 		int encounterStyle = ((RadioGroup) dialog.getDialog().findViewById(R.id.dialog_options_encounterstyle)).getCheckedRadioButtonId();
-		switch (encounterStyle) {
-		case R.id.dialog_options_encounterstyle_both:
+		if (encounterStyle == R.id.dialog_options_encounterstyle_both) {
 			textualEncounters = true;
 			graphicalEncounters = true;
-			break;
-		case R.id.dialog_options_encounterstyle_textual:
+		} else if (encounterStyle == R.id.dialog_options_encounterstyle_textual) {
 			textualEncounters = true;
 			graphicalEncounters = false;
-			break;
-		case R.id.dialog_options_encounterstyle_graphical:
-		default:
+		} else {
 			textualEncounters = false;
 			graphicalEncounters = true;
-			break;
 		}
 
 		volumeScroll = ((CheckBox) dialog.getDialog().findViewById(R.id.dialog_options_volumescroll)).isChecked();
@@ -1098,23 +1093,17 @@ public class GameState {
 
 		RadioGroup rg = (RadioGroup) dialog.getDialog().findViewById(R.id.dialog_options_theme);
 		ThemeType newTheme;
-		switch (rg.getCheckedRadioButtonId()) {
-		case R.id.dialog_options_theme_palm:
+		final int __switchValue = rg.getCheckedRadioButtonId();
+		if (__switchValue == R.id.dialog_options_theme_palm) {
 			newTheme = ThemeType.HOLO_PALM;
-			break;
-		case R.id.dialog_options_theme_dark:
+		} else if (__switchValue == R.id.dialog_options_theme_dark) {
 			newTheme = ThemeType.HOLO_DARK;
-			break;
-		case R.id.dialog_options_theme_light:
-		default:
-			newTheme = ThemeType.HOLO_LIGHT;
-			break;
-		case R.id.dialog_options_theme_material_light:
+		} else if (__switchValue == R.id.dialog_options_theme_material_light) {
 			newTheme = ThemeType.MATERIAL_LIGHT;
-			break;
-		case R.id.dialog_options_theme_material_dark:
+		} else if (__switchValue == R.id.dialog_options_theme_material_dark) {
 			newTheme = ThemeType.MATERIAL_DARK;
-			break;
+		} else {
+			newTheme = ThemeType.HOLO_LIGHT;
 		}
 		
 		if (theme != newTheme) {
@@ -3985,31 +3974,23 @@ public class GameState {
 		encounterButtonRunning = true;
 		
 		EncounterButton button;
-		switch (buttonId) {
-		case R.id.screen_encounter_button1:
+		if (buttonId == R.id.screen_encounter_button1) {
 			button = encounterType.button(1);
-			break;
-		case R.id.screen_encounter_button2:
+		} else if (buttonId == R.id.screen_encounter_button2) {
 			button = encounterType.button(2);
-			break;
-		case R.id.screen_encounter_button3:
+		} else if (buttonId == R.id.screen_encounter_button3) {
 			button = encounterType.button(3);
-			break;
-		case R.id.screen_encounter_button4:
+		} else if (buttonId == R.id.screen_encounter_button4) {
 			button = encounterType.button(4);
-			break;
-		case R.id.screen_encounter_surrender:
+		} else if (buttonId == R.id.screen_encounter_surrender) {
 			button = EncounterButton.SURRENDER;
-			break;
-		case R.id.screen_encounter_continuous_interrupt:
+		} else if (buttonId == R.id.screen_encounter_continuous_interrupt) {
 			button = EncounterButton.INTERRUPT;
-			break;
-		default:
+		} else {
 			if (EncounterScreen.TRIBBLES.contains(buttonId)) {
 				button = EncounterButton.TRIBBLE;
 			}
 			else throw new IllegalArgumentException();
-			break;
 		}
 
 		autoHandler.removeCallbacksAndMessages(null);
@@ -6746,33 +6727,21 @@ public class GameState {
 	public void shipYardFormHandleEvent( int buttonId )
 	{
 
-		switch (buttonId)
-		{
-		case R.id.screen_yard_fuelbutton:
+		if (buttonId == R.id.screen_yard_fuelbutton) {
 			getAmountForFuel();
 			showShipYard();
-			break;
-
-		case R.id.screen_yard_fullfuelbutton:
+		} else if (buttonId == R.id.screen_yard_fullfuelbutton) {
 			buyFuel( ship.getFuelTanks()*ship.type.costOfFuel );
 			showShipYard();
-			break;
-			
-		case R.id.screen_yard_repairbutton:
+		} else if (buttonId == R.id.screen_yard_repairbutton) {
 			getAmountForRepairs();
 			showShipYard();
-			break;
-
-		case R.id.screen_yard_fullrepairbutton:
+		} else if (buttonId == R.id.screen_yard_fullrepairbutton) {
 			buyRepairs( ship.getHullStrength()*ship.type.repairCosts );
 			showShipYard();
-			break;
-			
-		case R.id.screen_yard_shipsbutton:
+		} else if (buttonId == R.id.screen_yard_shipsbutton) {
 			mGameManager.setCurrentScreenType(ScreenType.BUYSHIP);
-			break;
-
-		case R.id.screen_yard_podbutton:
+		} else if (buttonId == R.id.screen_yard_podbutton) {
 			mGameManager.showDialogFragment(ConfirmDialog.newInstance(
 					R.string.screen_yard_buypod_title, 
 					R.string.screen_yard_buypod_query, 
@@ -6785,7 +6754,6 @@ public class GameState {
 							showShipYard();
 						}
 					}, null));
-			break;
 		}
 	}
 	
@@ -10575,9 +10543,7 @@ public class GameState {
 		BaseDialog dialog = mGameManager.findDialogByClass(NewGameDialog.class);
 			
 		// Tapping of one of the skill increase or decrease buttons
-		switch (buttonId)
-		{
-		case AlertDialog.BUTTON_POSITIVE:	// NB moved ok button handling to here
+		if (buttonId == AlertDialog.BUTTON_POSITIVE) {	// NB moved ok button handling to here
 			if (2*MAXSKILL - commander().pilot() - commander().fighter() -
 					commander().trader() - commander().engineer() > 0)
 			{
@@ -10627,62 +10593,42 @@ public class GameState {
 			dialog.dismiss();
 
 			return;
-		
-		case R.id.dialog_newgame_difficultypicker_minus:
+		} else if (buttonId == R.id.dialog_newgame_difficultypicker_minus) {
 			difficulty = difficulty.prev();
-			break;
-
-		case R.id.dialog_newgame_difficultypicker_plus:
+		} else if (buttonId == R.id.dialog_newgame_difficultypicker_plus) {
 			difficulty = difficulty.next();
-			break;
-
-		case R.id.dialog_newgame_pilotpicker_minus:
+		} else if (buttonId == R.id.dialog_newgame_pilotpicker_minus) {
 			if (commander().pilot() > 1)
 				commander().decreaseSkill(Skill.PILOT);
-			break;
-
-		case R.id.dialog_newgame_pilotpicker_plus:
+		} else if (buttonId == R.id.dialog_newgame_pilotpicker_plus) {
 			if (commander().pilot() < MAXSKILL)
 				if (2*MAXSKILL - commander().pilot() - commander().fighter() -
 						commander().trader() - commander().engineer() > 0)
 					commander().increaseSkill(Skill.PILOT);
-			break;
-
-		case R.id.dialog_newgame_fighterpicker_minus:
+		} else if (buttonId == R.id.dialog_newgame_fighterpicker_minus) {
 			if (commander().fighter() > 1)
 				commander().decreaseSkill(Skill.FIGHTER);
-			break;
-
-		case R.id.dialog_newgame_fighterpicker_plus:
+		} else if (buttonId == R.id.dialog_newgame_fighterpicker_plus) {
 			if (commander().fighter() < MAXSKILL)
 				if (2*MAXSKILL - commander().pilot() - commander().fighter() -
 						commander().trader() - commander().engineer() > 0)
 					commander().increaseSkill(Skill.FIGHTER);
-			break;
-
-		case R.id.dialog_newgame_traderpicker_minus:
+		} else if (buttonId == R.id.dialog_newgame_traderpicker_minus) {
 			if (commander().trader() > 1)
 				commander().decreaseSkill(Skill.TRADER);
-			break;
-
-		case R.id.dialog_newgame_traderpicker_plus:
+		} else if (buttonId == R.id.dialog_newgame_traderpicker_plus) {
 			if (commander().trader() < MAXSKILL)
 				if (2*MAXSKILL - commander().pilot() - commander().fighter() -
 						commander().trader() - commander().engineer() > 0)
 					commander().increaseSkill(Skill.TRADER);
-			break;
-
-		case R.id.dialog_newgame_engineerpicker_minus:
+		} else if (buttonId == R.id.dialog_newgame_engineerpicker_minus) {
 			if (commander().engineer() > 1)
 				commander().decreaseSkill(Skill.ENGINEER);
-			break;
-
-		case R.id.dialog_newgame_engineerpicker_plus:
+		} else if (buttonId == R.id.dialog_newgame_engineerpicker_plus) {
 			if (commander().engineer() < MAXSKILL)
 				if (2*MAXSKILL - commander().pilot() - commander().fighter() -
 						commander().trader() - commander().engineer() > 0)
 					commander().increaseSkill(Skill.ENGINEER);
-			break;
 		}
 		newCommanderDrawSkills();
 	}
@@ -10710,10 +10656,7 @@ public class GameState {
 			}
 		}
 
-		switch (buttonId)
-		{
-		case R.id.screen_warp_prev:
-		case R.id.screen_warp_next:
+		if (buttonId == R.id.screen_warp_prev || buttonId == R.id.screen_warp_next) {
 //			SolarSystem system = nextSystemWithinRange( warpSystem, buttonId == R.id.screen_warp_prev );
 //			if (system != null)
 //			{
@@ -10723,26 +10666,17 @@ public class GameState {
 			ViewPager pager =  ((WarpSubScreen) mGameManager.getCurrentScreen()).getPager();
 			int position = (buttonId == R.id.screen_warp_prev? WarpSystemPagerAdapter.POSITION_PREV : WarpSystemPagerAdapter.POSITION_NEXT);
 			pager.setCurrentItem(position);
-			break;
-
-		case R.id.screen_warp_warp:
+		} else if (buttonId == R.id.screen_warp_warp) {
 			doWarp(false);
-			break;
-
-		case R.id.screen_warp_toggle:
+		} else if (buttonId == R.id.screen_warp_toggle) {
 			aplScreen = false;
 //			showExecuteWarp();
 			mGameManager.setCurrentScreenType(ScreenType.TARGET);
-			break;
-
-		case R.id.screen_warp_avgprices_diffbutton:
+		} else if (buttonId == R.id.screen_warp_avgprices_diffbutton) {
 			priceDifferences = !priceDifferences;
 			mGameManager.getCurrentScreen().onRefreshScreen();
-			break;
-
-		default:
+		} else {
 			mGameManager.setCurrentScreenType(ScreenType.WARP);
-			break;
 		}
 	}
 
@@ -10754,10 +10688,7 @@ public class GameState {
 	{
 //		BaseDialog dialog = mGameManager.findDialogByClass(WarpPopupDialog.class);
 
-		switch (buttonId)
-		{
-		case R.id.screen_warp_prev:
-		case R.id.screen_warp_next:
+		if (buttonId == R.id.screen_warp_prev || buttonId == R.id.screen_warp_next) {
 //			SolarSystem system = nextSystemWithinRange( warpSystem, buttonId == R.id.screen_warp_prev );
 //			if (system != null)
 //			{
@@ -10767,26 +10698,19 @@ public class GameState {
 			ViewPager pager =  ((WarpSubScreen) mGameManager.getCurrentScreen()).getPager();
 			int position = (buttonId == R.id.screen_warp_prev? WarpSystemPagerAdapter.POSITION_PREV : WarpSystemPagerAdapter.POSITION_NEXT);
 			pager.setCurrentItem(position);
-			break;
+			
 
 		// Warp	to another system. This can only be selected if the warp is indeed possible		
-		case R.id.screen_warp_warp:
+		} else if (buttonId == R.id.screen_warp_warp) {
 			doWarp(false);
-			break;
-
-		case R.id.screen_warp_toggle:
+		} else if (buttonId == R.id.screen_warp_toggle) {
 			aplScreen = true;
 //			showAveragePrices();
 			mGameManager.setCurrentScreenType(ScreenType.AVGPRICES);
-			break;
-
-		case R.id.screen_warp_target_cost_specific:
+		} else if (buttonId == R.id.screen_warp_target_cost_specific) {
 			mGameManager.showDialogFragment(WarpTargetCostDialog.newInstance());
-			break;
-
-		default:
+		} else {
 			mGameManager.setCurrentScreenType(ScreenType.WARP);
-			break;
 		}
 				
 	}
@@ -11977,31 +11901,25 @@ public class GameState {
 			String message;
 			
 			// Some special treatment of certain help texts which need to change based on variable system names
-			switch (resId) {
 			// Nix
-			case R.string.help_reactoronboard:
-			case R.string.help_cantsellshipwithreactor:
+			if (resId == R.string.help_reactoronboard || resId == R.string.help_cantsellshipwithreactor) {
 				message = getResources().getString(resId, solarSystem[nix]);
-				break;
+				
 				
 			// Japori
-			case R.string.help_antidote:
-			case R.string.help_antidotedestroyed:
-			case R.string.help_antidoteremoved:
+			} else if (resId == R.string.help_antidote || resId == R.string.help_antidotedestroyed || resId == R.string.help_antidoteremoved) {
 				message = getResources().getString(resId, solarSystem[japori]);
-				break;
+				
 				
 			// Originally, Marie Celeste had always recently visited Lowry, but just for fun we'll randomize that too. Wonder if anyone will notice...
-			case R.string.help_lootmarieceleste:
+			} else if (resId == R.string.help_lootmarieceleste) {
 				if (!randomQuestSystems) {
 					marieSystem = getResources().getString(R.string.solarsystem_lowry);
 				} else if (marieSystem == null) {
 					marieSystem = getRandom(solarSystem).name;
 				}
 				message = getResources().getString(resId, marieSystem);
-				break;
-				
-			default:
+			} else {
 				message = getResources().getString(resId);
 			}
 

@@ -23,7 +23,7 @@ package com.brucelet.spacetrader;
 
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,7 +33,7 @@ import com.brucelet.spacetrader.datatypes.SolarSystem;
 import com.brucelet.spacetrader.enumtypes.ScreenType;
 
 /**
- * A simple {@link android.support.v4.app.Fragment} subclass.
+ * A simple {@link androidx.fragment.app.Fragment} subclass.
  * 
  */
 public class WarpTargetScreen extends WarpSubScreen {

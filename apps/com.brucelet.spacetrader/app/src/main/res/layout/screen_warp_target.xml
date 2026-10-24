@@ -30,7 +30,7 @@
                     <Button android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/buttonStyleRounded" />
             </LinearLayout>
 
-            <android.support.v4.view.ViewPager
+            <androidx.viewpager.widget.ViewPager
                 android:id="@+id/screen_warp_target_pager"
                 android:layout_width="match_parent"
                 android:layout_height="1000dp"

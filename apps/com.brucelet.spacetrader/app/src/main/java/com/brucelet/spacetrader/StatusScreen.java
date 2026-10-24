@@ -30,7 +30,7 @@ import android.view.ViewGroup;
 import com.brucelet.spacetrader.enumtypes.ScreenType;
 
 /**
- * A simple {@link android.support.v4.app.Fragment} subclass.
+ * A simple {@link androidx.fragment.app.Fragment} subclass.
  * 
  */
 public class StatusScreen extends BaseScreen{

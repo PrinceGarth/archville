@@ -20,7 +20,7 @@
  */
 package com.brucelet.spacetrader;
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import com.brucelet.spacetrader.datatypes.GameState;
 import com.brucelet.spacetrader.enumtypes.XmlString;

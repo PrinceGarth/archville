@@ -31,11 +31,18 @@
             android:weightSum="2">
 
             <ScrollView
-                android:id="@+id/container"
+                android:id="@+id/container_scroll"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="top"/>
+                android:gravity="top">
+                <!-- Fragments go in a FrameLayout: a ScrollView can briefly hold both the
+                     outgoing and incoming screen during an AndroidX fragment replace. -->
+                <FrameLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </ScrollView>
 
             <ScrollView
                 android:id="@+id/container2"

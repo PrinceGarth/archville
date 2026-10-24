@@ -2,8 +2,6 @@ package com.brucelet.spacetrader.widget;
 
 import android.content.Context;
 import android.graphics.Typeface;
-//import android.support.v7.widget.ListPopupWindow;
-//import android.widget.ListPopupWindow;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -15,6 +13,8 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListAdapter;
 import android.widget.TextView;
+
+import androidx.appcompat.widget.ListPopupWindow;
 
 import com.brucelet.spacetrader.R;
 
@@ -42,6 +42,11 @@ public class MenuDropDownWindow extends ListPopupWindow implements View.OnKeyLis
 		setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				// Drag-to-open can release over a divider, which has no MenuItem.
+				// (The old fork of ListPopupWindow filtered these out itself.)
+				if (!((ListAdapter) parent.getAdapter()).isEnabled(position)) {
+					return;
+				}
 				if (mListener != null) {
 					MenuListAdapter adapter = (MenuListAdapter) parent.getAdapter();
 					mListener.onDropDownItemClick(adapter.getItem(position));

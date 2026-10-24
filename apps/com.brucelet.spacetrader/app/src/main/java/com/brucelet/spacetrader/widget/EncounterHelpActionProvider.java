@@ -23,7 +23,7 @@ package com.brucelet.spacetrader.widget;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.ContextWrapper;
-import android.support.v4.view.ActionProvider;
+import androidx.core.view.ActionProvider;
 import android.view.LayoutInflater;
 import android.view.View;
 

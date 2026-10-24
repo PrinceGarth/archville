@@ -20,7 +20,7 @@
  */
 package com.brucelet.spacetrader;
 
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 import android.util.Log;
 
 import com.brucelet.spacetrader.datatypes.GameState;

@@ -36,7 +36,7 @@ import com.brucelet.spacetrader.enumtypes.Shield;
 import com.brucelet.spacetrader.enumtypes.Weapon;
 
 /**
- * A simple {@link android.support.v4.app.Fragment} subclass.
+ * A simple {@link androidx.fragment.app.Fragment} subclass.
  * 
  */
 public class StatusShipScreen extends BaseScreen {
