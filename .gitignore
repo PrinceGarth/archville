@@ -2,6 +2,9 @@
 /.*
 !/.gitignore
 !/.github/
+# Claude Code sandbox placeholders that can appear in any directory
+.claude/
+.mcp.json
 
 # Signing keys and passwords: back these up, never commit them
 /secrets/

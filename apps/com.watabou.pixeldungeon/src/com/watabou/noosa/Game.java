@@ -37,13 +37,21 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.media.AudioManager;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.os.Vibrator;
 import android.util.DisplayMetrics;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
+import android.graphics.Color;
+import android.graphics.Insets;
 import android.view.View;
+import android.view.WindowInsets;
+import android.widget.FrameLayout;
+import android.window.OnBackInvokedCallback;
+import android.window.OnBackInvokedDispatcher;
 
 public class Game extends Activity implements GLSurfaceView.Renderer, View.OnTouchListener {
 
@@ -112,7 +120,41 @@ public class Game extends Activity implements GLSurfaceView.Renderer, View.OnTou
 		view.setEGLConfigChooser( false );
 		view.setRenderer( this );
 		view.setOnTouchListener( this );
-		setContentView( view );
+		
+		// Android 15+ always lays apps out edge-to-edge. Keep the game clear of the
+		// navigation bar and display cutout by padding a frame around the GL view;
+		// the game sizes itself from the surface, so it lays out in the safe area.
+		FrameLayout frame = new FrameLayout( this );
+		frame.setBackgroundColor( Color.BLACK );
+		frame.addView( view );
+		if (Build.VERSION.SDK_INT >= 30) {
+			frame.setOnApplyWindowInsetsListener( new View.OnApplyWindowInsetsListener() {
+				@Override
+				public WindowInsets onApplyWindowInsets( View v, WindowInsets windowInsets ) {
+					Insets insets = windowInsets.getInsets( 
+						WindowInsets.Type.systemBars() | WindowInsets.Type.displayCutout() );
+					v.setPadding( insets.left, insets.top, insets.right, insets.bottom );
+					return WindowInsets.CONSUMED;
+				}
+			} );
+		}
+		setContentView( frame );
+		
+		// With predictive back (default from targetSdk 36) the system no longer sends
+		// KEYCODE_BACK; turn the back gesture into a key press for the scenes to handle
+		if (Build.VERSION.SDK_INT >= 33) {
+			getOnBackInvokedDispatcher().registerOnBackInvokedCallback(
+				OnBackInvokedDispatcher.PRIORITY_DEFAULT, new OnBackInvokedCallback() {
+				@Override
+				public void onBackInvoked() {
+					long now = SystemClock.uptimeMillis();
+					synchronized (motionEvents) {
+						keysEvents.add( new KeyEvent( now, now, KeyEvent.ACTION_DOWN, Keys.BACK, 0 ) );
+						keysEvents.add( new KeyEvent( now, now, KeyEvent.ACTION_UP, Keys.BACK, 0 ) );
+					}
+				}
+			} );
+		}
 	}
 	
 	@Override

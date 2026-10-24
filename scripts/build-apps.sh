@@ -31,7 +31,9 @@ for app in "${apps[@]}"; do
 	echo "==> $app"
 	(cd "$dir" && ./gradlew --no-daemon --console=plain assembleRelease)
 
-	unsigned="$(ls "$dir"/app/build/outputs/apk/release/*-release-unsigned.apk)"
+	# app/ module for Android Studio projects, root module for converted Ant projects
+	unsigned=("$dir"/{app/,}build/outputs/apk/release/*-release-unsigned.apk)
+	unsigned="${unsigned[0]}"
 	badging="$("$aapt2" dump badging "$unsigned")"
 	badging="${badging%%$'\n'*}"
 	app_id="$(sed -n "s/.*package: name='\([^']*\)'.*/\1/p" <<<"$badging")"
